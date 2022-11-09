@@ -15,13 +15,13 @@ const Mob = ({id, mobConfig: {position, scale = 1}}: MobProps) => {
     frameWidth: 200,
     frameHeight: 200,
   })
-  const {sequence} = useMobAnimation()
+  // const {sequence} = useMobAnimation()
 
   return (
     <Sprite
       texture={sprites[id]}
       anchor={[0.5, 0.9]}
-      scale={scale * scales[sequence]}
+      scale={scale}
       x={position.x * 36.55 - APP_WIDTH / 2 - OFFSET.x}
       y={position.y * 36.38 - APP_HEIGHT / 2 - OFFSET.y}
     />
