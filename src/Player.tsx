@@ -131,7 +131,7 @@ export const Player = ({}: PlayerProps) => {
     <Sprite
       texture={currentSprite}
       anchor={[0.5, 1]}
-      scale={1.5}
+      scale={1}
       x={position.x - APP_WIDTH / 2}
       y={position.y - APP_HEIGHT / 2}
     />
