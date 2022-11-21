@@ -1,0 +1,13 @@
+diff --git a/index.d.ts b/index.d.ts
+index 0362c03a4a706ff411ebe9540932ad36bb0c07b4..46156c38771ad487a62dd47c071366ab30324bab 100644
+--- a/index.d.ts
++++ b/index.d.ts
+@@ -356,7 +356,7 @@ declare namespace _ReactPixi {
+ // components
+ export const Text: React.FC<_ReactPixi.IText>;
+ export const Sprite: React.FC<_ReactPixi.ISprite>;
+-export const Container: React.FC<_ReactPixi.IContainer>;
++export const Container: React.FC<React.PropsWithChildren<_ReactPixi.IContainer>>;
+ export const Graphics: React.FC<_ReactPixi.IGraphics>;
+ export const BitmapText: React.FC<_ReactPixi.IBitmapText>;
+ export const NineSlicePlane: React.FC<_ReactPixi.INineSlicePlane>;

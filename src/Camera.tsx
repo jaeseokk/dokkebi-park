@@ -1,4 +1,5 @@
 import React, {useRef} from 'react'
+import * as PIXI from 'pixi.js'
 import {PixiComponent, useApp} from '@inlet/react-pixi'
 import {Viewport as PixiViewport} from 'pixi-viewport'
 import {useMounted} from './useMounted'
@@ -13,6 +14,10 @@ const Camera = ({children}: CameraProps) => {
   const app = useApp()
   const viewportRef = useRef<PixiViewport>(null)
 
+  const getViewport = () => {
+    return viewportRef.current
+  }
+
   const moveViewport = ({x, y}: {x: number; y: number}) => {
     if (!viewportRef.current) {
       return
@@ -23,8 +28,18 @@ const Camera = ({children}: CameraProps) => {
 
   if (isMounted) {
     return (
-      <Viewport screenWidth={app.view.width} screenHeight={app.view.height} ref={viewportRef}>
-        <CameraContext.Provider value={{viewport: viewportRef.current, moveViewport}}>
+      <Viewport
+        screenWidth={app.view.width}
+        screenHeight={app.view.height}
+        interaction={app.renderer.plugins.interaction}
+        ref={viewportRef}
+      >
+        <CameraContext.Provider
+          value={{
+            getViewport,
+            moveViewport,
+          }}
+        >
           {children}
         </CameraContext.Provider>
       </Viewport>
@@ -35,7 +50,7 @@ const Camera = ({children}: CameraProps) => {
 }
 
 export interface CameraContextProps {
-  viewport: PixiViewport | null
+  getViewport: () => PixiViewport | null
   moveViewport: ({x, y}: {x: number; y: number}) => void
 }
 
@@ -56,6 +71,7 @@ interface ViewportProps {
   screenHeight: number
   worldWidth?: number
   worldHeight?: number
+  interaction?: PIXI.InteractionManager
   children: React.ReactNode
 }
 
@@ -66,6 +82,7 @@ const Viewport = PixiComponent('Viewport', {
       screenHeight: props.screenHeight,
       worldWidth: props.worldWidth,
       worldHeight: props.worldHeight,
+      interaction: props.interaction,
     })
 
     return viewport
