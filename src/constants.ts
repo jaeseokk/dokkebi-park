@@ -1,6 +1,17 @@
 export const APP_WIDTH = 1024
 export const APP_HEIGHT = 576
 
+export const COLLISION_SYMBOL = 46657
+
+export const TILE_SIZE = 32
+
+export const TILE_MAP_ROW_SIZE = 96
+
+export const PLAYER_SIZE = {
+  width: 16,
+  height: 20,
+}
+
 export const OFFSET = {
   x: 860,
   y: 400,
@@ -9,6 +20,10 @@ export const OFFSET = {
 export interface MobConfig {
   scale?: number
   position: {x: number; y: number}
+  boundaryWidthScale?: number
+  boundaryHeightScale?: number
+  boundaryHeightPadding?: number
+  boundaryMarginBottom?: number
 }
 
 export const MOB_CONFIG_LIST: MobConfig[] = [
@@ -1124,6 +1139,9 @@ export const MOB_CONFIG_LIST: MobConfig[] = [
       y: 669,
     },
     scale: 1.9,
+    boundaryHeightScale: 0.4,
+    boundaryHeightPadding: 65,
+    // boundaryMarginBottom: 5,
   },
   {
     position: {
@@ -1943,5 +1961,22 @@ export const MOB_CONFIG_LIST: MobConfig[] = [
       y: 1636,
     },
     scale: 0.4,
+  },
+]
+
+export interface BoundaryException {
+  position: {x: number; y: number}
+  width: number
+  height: number
+}
+
+export const BOUNDARY_EXCEPTION_CONFIG_LIST: BoundaryException[] = [
+  {
+    position: {
+      x: 2071,
+      y: 720,
+    },
+    width: 40,
+    height: 110,
   },
 ]

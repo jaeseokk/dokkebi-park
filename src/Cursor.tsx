@@ -1,33 +1,28 @@
-import React from 'react'
-import {Sprite} from '@inlet/react-pixi'
-import {useMultiPackedSpritesheet} from './useMultiPackedSpritesheet'
-import {HelperData} from './MobsHelper'
+import React, {ComponentProps} from 'react'
+import {Graphics} from '@inlet/react-pixi'
 
-export interface CursorProps {
-  position: {x: number; y: number}
-  helperData: HelperData
-}
+export interface CursorProps
+  extends Pick<ComponentProps<typeof Graphics>, 'x' | 'y' | 'position' | 'zIndex'> {}
 
-const Cursor = ({position, helperData}: CursorProps) => {
-  const sprites = useMultiPackedSpritesheet({
-    spritesheetUrls: ['/mob-sprites-0.png', '/mob-sprites-1.png', '/mob-sprites-2.png'],
-    frameWidth: 200,
-    frameHeight: 200,
-  })
+const Cursor = ({...rest}: CursorProps) => {
+  const draw = React.useCallback((g) => {
+    g.clear()
+    g.lineStyle(4, 0x091eaa, 1)
+    g.moveTo(-5, -25)
+    g.lineTo(-25, -25)
+    g.lineTo(-25, -5)
+    g.moveTo(-25, 5)
+    g.lineTo(-25, 25)
+    g.lineTo(-5, 25)
+    g.moveTo(5, 25)
+    g.lineTo(25, 25)
+    g.lineTo(25, 5)
+    g.moveTo(25, -5)
+    g.lineTo(25, -25)
+    g.lineTo(5, -25)
+  }, [])
 
-  if (!helperData.enabled) {
-    return null
-  }
-
-  return (
-    <Sprite
-      texture={sprites[Number(helperData.index) || 0]}
-      anchor={0.5}
-      scale={Number(helperData.scale) || 1}
-      x={position.x}
-      y={position.y}
-    />
-  )
+  return <Graphics draw={draw} {...rest} />
 }
 
 export default Cursor

@@ -11,6 +11,7 @@ const loader = PIXI.Loader.shared
 
 const ResourceLoader = ({children, resources, fallback}: ResourceLoaderProps) => {
   const [isLoading, setIsLoading] = useState(true)
+  const [isClicked, setIsClicked] = useState(false)
 
   useEffect(() => {
     resources.forEach((resource) => loader.add(resource))
@@ -25,6 +26,19 @@ const ResourceLoader = ({children, resources, fallback}: ResourceLoaderProps) =>
 
   if (isLoading) {
     return <>{fallback}</>
+  }
+
+  if (!isClicked) {
+    return (
+      <div
+        style={{cursor: 'pointer'}}
+        onClick={() => {
+          setIsClicked(true)
+        }}
+      >
+        click me
+      </div>
+    )
   }
 
   return <>{children}</>

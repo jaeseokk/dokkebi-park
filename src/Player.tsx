@@ -1,11 +1,15 @@
-import React, {useEffect, useReducer, useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import {useSpritesheet} from './useSpritesheet'
 import {useKeyControl} from './useKeyControl'
 import {useCamera} from './Camera'
 import {Sprite, useTick} from '@inlet/react-pixi'
-import {APP_HEIGHT, APP_WIDTH} from './constants'
-import {useSetState} from './useSetState'
+import {APP_HEIGHT, APP_WIDTH, PLAYER_SIZE} from './constants'
 import {Resource, Texture} from 'pixi.js'
+import {rectangularCollision} from './utils'
+import {boundaries} from './Boundaries'
+import {boundaryExceptions} from './BoundaryExceptions'
+import {useAtom} from 'jotai'
+import {playerAtom} from './stores'
 
 export type PlayerAnimationStatus = 'idle' | 'walk' | 'run'
 export type PlayerDirection = 'up' | 'down' | 'left' | 'right'
@@ -13,6 +17,51 @@ export type PlayerDirection = 'up' | 'down' | 'left' | 'right'
 export interface PlayerState {
   animationStatus: PlayerAnimationStatus
   direction: PlayerDirection
+}
+
+const getNextPosition = (
+  position: {x: number; y: number},
+  deltaVelocity: {x: number; y: number},
+) => {
+  if (!deltaVelocity.x && !deltaVelocity.y) {
+    return null
+  }
+  let nextPosition = {
+    x: position.x + deltaVelocity.x,
+    y: position.y + deltaVelocity.y,
+  }
+
+  const isColliding =
+    !boundaryExceptions.every((boundaryException) => {
+      return rectangularCollision({
+        rectangle1: {
+          position: {
+            x: nextPosition.x - PLAYER_SIZE.width / 2,
+            y: nextPosition.y - PLAYER_SIZE.height,
+          },
+          ...PLAYER_SIZE,
+        },
+        rectangle2: {
+          ...boundaryException,
+        },
+      })
+    }) &&
+    boundaries.some((boundary) => {
+      return rectangularCollision({
+        rectangle1: {
+          position: {
+            x: nextPosition.x - PLAYER_SIZE.width / 2,
+            y: nextPosition.y - PLAYER_SIZE.height,
+          },
+          ...PLAYER_SIZE,
+        },
+        rectangle2: {
+          ...boundary,
+        },
+      })
+    })
+
+  return isColliding ? null : nextPosition
 }
 
 export interface PlayerProps {}
@@ -39,18 +88,12 @@ export const Player = ({}: PlayerProps) => {
     frameHeight: 80,
   })
   const [frame, setFrame] = useState(0)
-
   const upKeyControl = useKeyControl('ArrowUp')
   const downKeyControl = useKeyControl('ArrowDown')
   const leftKeyControl = useKeyControl('ArrowLeft')
   const rightKeyControl = useKeyControl('ArrowRight')
   const {moveViewport} = useCamera()
-  const [position, setPosition] = useState({x: 0, y: 0})
-  const [playerState, setPlayerState] = useSetState<PlayerState>({
-    animationStatus: 'idle',
-    direction: 'down',
-  })
-
+  const [player, setPlayer] = useAtom(playerAtom)
   const spritesMap: {[key in PlayerDirection]: Texture<Resource>[]} = {
     up: upSprites,
     down: downSprites,
@@ -58,11 +101,11 @@ export const Player = ({}: PlayerProps) => {
     right: rightSprites,
   }
 
-  const currentSprites = spritesMap[playerState.direction]
+  const currentSprites = spritesMap[player.state.direction]
   const currentSprite = currentSprites[Math.floor(frame)]
 
   useTick((delta) => {
-    if (playerState.animationStatus === 'idle') {
+    if (player.state.animationStatus === 'idle') {
       return
     }
 
@@ -75,42 +118,43 @@ export const Player = ({}: PlayerProps) => {
 
   useTick((delta) => {
     let velocity = {x: 0, y: 0}
-    let direction = playerState.direction
+    let direction = player.state.direction
 
     if (upKeyControl.isDown) {
       velocity.y -= 1
       direction = 'up'
-    }
-    if (downKeyControl.isDown) {
+    } else if (downKeyControl.isDown) {
       velocity.y += 1
       direction = 'down'
-    }
-    if (leftKeyControl.isDown) {
+    } else if (leftKeyControl.isDown) {
       velocity.x -= 1
       direction = 'left'
-    }
-    if (rightKeyControl.isDown) {
+    } else if (rightKeyControl.isDown) {
       velocity.x += 1
       direction = 'right'
     }
 
-    if (velocity.x !== 0 || velocity.y !== 0) {
-      const speed = 2
-      const deltaVelocity = {
-        x: velocity.x * speed * delta,
-        y: velocity.y * speed * delta,
-      }
-      const nextPosition = {
-        x: position.x + deltaVelocity.x,
-        y: position.y + deltaVelocity.y,
-      }
+    const speed = 2
+    const deltaVelocity = {
+      x: velocity.x * speed * delta,
+      y: velocity.y * speed * delta,
+    }
 
-      setPosition(nextPosition)
+    const nextPosition = getNextPosition(player.position, deltaVelocity)
+
+    if (nextPosition) {
+      setPlayer((prev) => ({
+        ...prev,
+        position: nextPosition,
+      }))
       moveViewport(nextPosition)
-      setPlayerState({
-        animationStatus: 'walk',
-        direction,
-      })
+      setPlayer((prev) => ({
+        ...prev,
+        state: {
+          animationStatus: 'walk',
+          direction,
+        },
+      }))
     }
 
     if (
@@ -119,22 +163,31 @@ export const Player = ({}: PlayerProps) => {
       !leftKeyControl.isDown &&
       !rightKeyControl.isDown
     ) {
-      setPlayerState({animationStatus: 'idle'})
+      setPlayer((prev) => ({
+        ...prev,
+        state: {
+          ...prev.state,
+          animationStatus: 'idle',
+        },
+      }))
     }
   })
 
   useEffect(() => {
-    moveViewport({x: position.x, y: position.y})
+    moveViewport({x: player.position.x, y: player.position.y})
   }, [])
 
   return (
-    <Sprite
-      texture={currentSprite}
-      anchor={[0.5, 1]}
-      scale={1}
-      x={position.x - APP_WIDTH / 2}
-      y={position.y - APP_HEIGHT / 2}
-    />
+    <>
+      <Sprite
+        texture={currentSprite}
+        anchor={[0.5, 1]}
+        scale={1}
+        x={player.position.x - APP_WIDTH / 2}
+        y={player.position.y - APP_HEIGHT / 2}
+        zIndex={2}
+      />
+    </>
   )
 }
 export default Player

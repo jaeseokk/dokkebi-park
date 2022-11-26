@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import {Container, Sprite, Stage, useApp} from '@inlet/react-pixi'
 import Camera, {useCamera} from './Camera'
 import Player from './Player'
@@ -11,6 +11,9 @@ import produce from 'immer'
 import {useAtom} from 'jotai'
 import {mobsConfigAtom} from './stores'
 import {useUpdateHelperData} from './useUpdateHelperData'
+import Boundaries from './Boundaries'
+import BoundaryExceptions from './BoundaryExceptions'
+import BackgroundSound, {useBackgroundSound} from './BackgroundSound'
 
 export interface AppProps {}
 
@@ -28,6 +31,7 @@ const App = ({}: AppProps) => {
         '/mob-sprites-1.png',
         '/mob-sprites-2.png',
       ]}
+      fallback={<div>Loading...</div>}
     >
       <StateContainer />
     </ResourceLoader>
@@ -44,30 +48,34 @@ const StateContainer = ({}: StateContainerProps) => {
   return (
     <>
       <Stage width={APP_WIDTH} height={APP_HEIGHT} options={{backgroundAlpha: 0}}>
-        <Camera>
-          <Park
-            helperData={helperData}
-            cursorPosition={cursorPosition}
-            onChangeCursorPosition={({x, y}) => {
-              setCursorPosition({x, y})
-            }}
-            onClick={() => {
-              const x = cursorPosition ? Math.round(cursorPosition.x + APP_WIDTH / 2 + OFFSET.x) : 0
-              const y = cursorPosition
-                ? Math.round(cursorPosition.y + APP_HEIGHT / 2 + OFFSET.y)
-                : 0
+        <BackgroundSound>
+          <Camera>
+            <Park
+              helperData={helperData}
+              cursorPosition={cursorPosition}
+              onChangeCursorPosition={({x, y}) => {
+                setCursorPosition({x, y})
+              }}
+              onClick={() => {
+                const x = cursorPosition
+                  ? Math.round(cursorPosition.x + APP_WIDTH / 2 + OFFSET.x)
+                  : 0
+                const y = cursorPosition
+                  ? Math.round(cursorPosition.y + APP_HEIGHT / 2 + OFFSET.y)
+                  : 0
 
-              setMobsConfig(
-                produce(mobsConfig, (draft) => {
-                  draft[helperData.index] = {
-                    position: {x, y},
-                    scale: helperData.scale,
-                  }
-                }),
-              )
-            }}
-          />
-        </Camera>
+                setMobsConfig(
+                  produce(mobsConfig, (draft) => {
+                    draft[helperData.index] = {
+                      position: {x, y},
+                      scale: helperData.scale,
+                    }
+                  }),
+                )
+              }}
+            />
+          </Camera>
+        </BackgroundSound>
       </Stage>
       {/*<MobsHelper cursorPosition={cursorPosition} />*/}
     </>
@@ -84,12 +92,21 @@ interface ParkProps {
 const Park = ({helperData, cursorPosition, onChangeCursorPosition, onClick}: ParkProps) => {
   const app = useApp()
   const {getViewport} = useCamera()
+  const {play, stop} = useBackgroundSound()
+
+  useEffect(() => {
+    play()
+    return () => {
+      stop()
+    }
+  }, [])
 
   app.renderer.plugins.interaction.moveWhenInside = true
 
   return (
     <>
       <Container
+        sortableChildren
         interactive
         pointermove={(e) => {
           const viewport = getViewport()
@@ -106,13 +123,15 @@ const Park = ({helperData, cursorPosition, onChangeCursorPosition, onClick}: Par
         }}
         pointerdown={onClick}
       >
-        <Container position={[-APP_WIDTH / 2 - OFFSET.x, -APP_HEIGHT / 2 - OFFSET.y]}>
+        <Container position={[-APP_WIDTH / 2 - OFFSET.x, -APP_HEIGHT / 2 - OFFSET.y]} zIndex={0}>
           <Map />
-          <Mobs />
         </Container>
+        {/*<Boundaries />*/}
+        {/*<BoundaryExceptions />*/}
         <Player />
+        <Mobs />
         {/*{helperData && cursorPosition && (*/}
-        {/*  <Cursor position={cursorPosition} helperData={helperData} />*/}
+        {/*  <MobPositionTestCursor position={cursorPosition} helperData={helperData} />*/}
         {/*)}*/}
       </Container>
     </>

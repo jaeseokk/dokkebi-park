@@ -1,5 +1,6 @@
 import * as PIXI from 'pixi.js'
 import {Texture} from 'pixi.js'
+import {MOB_CONFIG_LIST} from './constants'
 
 export interface UseMultiPackedSpritesheetParam {
   spritesheetUrls: string[]
