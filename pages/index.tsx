@@ -1,10 +1,9 @@
 import Head from 'next/head'
-import dynamic from 'next/dynamic'
 import Main from '../src/Main'
 
-export interface PixiPageProps {}
+export interface IndexPageProps {}
 
-const PixiPage = ({}: PixiPageProps) => {
+const IndexPage = ({}: IndexPageProps) => {
   return (
     <>
       <Head>
@@ -17,4 +16,4 @@ const PixiPage = ({}: PixiPageProps) => {
   )
 }
 
-export default PixiPage
+export default IndexPage

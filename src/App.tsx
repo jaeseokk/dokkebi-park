@@ -17,22 +17,21 @@ import BackgroundSound, {useBackgroundSound} from './BackgroundSound'
 
 export interface AppProps {}
 
+const RESOURCES = [
+  '/map.png',
+  '/map_with_mobs_info.png',
+  '/playerDown.png',
+  '/playerUp.png',
+  '/playerLeft.png',
+  '/playerRight.png',
+  '/mob-sprites-0.png',
+  '/mob-sprites-1.png',
+  '/mob-sprites-2.png',
+]
+
 const App = ({}: AppProps) => {
   return (
-    <ResourceLoader
-      resources={[
-        '/map.png',
-        '/map_with_mobs_info.png',
-        '/playerDown.png',
-        '/playerUp.png',
-        '/playerLeft.png',
-        '/playerRight.png',
-        '/mob-sprites-0.png',
-        '/mob-sprites-1.png',
-        '/mob-sprites-2.png',
-      ]}
-      fallback={<div>Loading...</div>}
-    >
+    <ResourceLoader resources={RESOURCES} fallback={<div>Loading...</div>}>
       <StateContainer />
     </ResourceLoader>
   )

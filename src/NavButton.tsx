@@ -1,12 +1,12 @@
 import React from 'react'
 
-export interface NavButtonProps {
+export interface NavButtonProps extends React.ComponentPropsWithoutRef<'a'> {
   children: string
 }
 
-const NavButton = ({children}: NavButtonProps) => {
+const NavButton = ({children, ...rest}: NavButtonProps) => {
   return (
-    <button className="group">
+    <a className="group" {...rest}>
       {children.split('').map((char, charIndex) => (
         <span
           key={`${charIndex}_${char}`}
@@ -15,7 +15,7 @@ const NavButton = ({children}: NavButtonProps) => {
           {char}
         </span>
       ))}
-    </button>
+    </a>
   )
 }
 
