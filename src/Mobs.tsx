@@ -30,7 +30,7 @@ const Mobs = ({}: MobsProps) => {
   }
 
   useTick(() => {
-    if (isMouseInteractionProcessing.current) {
+    if (player.state.animationStatus === 'idle' && isMouseInteractionProcessing.current) {
       return
     }
 

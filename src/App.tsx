@@ -77,6 +77,12 @@ const StateContainer = ({}: StateContainerProps) => {
           </Camera>
         </BackgroundSound>
       </Stage>
+      <button className="absolute left-0 bottom-0 h-[9.375rem] w-[9.375rem] translate-x-[-50%] translate-y-[50%] bg-[url('/club.png')] bg-cover bg-center transition-transform hover:scale-110">
+        <span className="opacity-0">!</span>
+      </button>
+      <button className="absolute right-0 bottom-0 h-[9.375rem] w-[9.375rem] translate-x-[50%] translate-y-[50%] bg-[url('/dict.png')] bg-cover bg-center transition-transform hover:scale-110">
+        <span className="opacity-0">!</span>
+      </button>
       {/*<MobsHelper cursorPosition={cursorPosition} />*/}
     </>
   )
