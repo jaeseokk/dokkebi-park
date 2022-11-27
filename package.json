@@ -10,16 +10,21 @@
   },
   "dependencies": {
     "@inlet/react-pixi": "^6.8.0",
+    "@juggle/resize-observer": "^3.4.0",
     "@pixi/sound": "^4.3.1",
     "@puxi/core": "^1.0.2",
     "framer-motion": "^7.6.12",
     "immer": "^9.0.16",
     "jotai": "^1.10.0",
+    "muuri": "^0.9.5",
     "next": "12.3.1",
     "pixi-viewport": "^4.37.0",
     "pixi.js": "^6.5.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-use": "^17.4.0",
+    "ruuri": "^0.1.8",
+    "use-resize-observer": "^9.1.0"
   },
   "devDependencies": {
     "@types/node": "18.7.22",

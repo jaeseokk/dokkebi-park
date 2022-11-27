@@ -6,6 +6,10 @@ import logo from '@public/logo.svg'
 import NavPage from '@src/NavPage'
 import About from '@src/About'
 import {useRouter} from 'next/router'
+
+import dynamic from 'next/dynamic'
+import ArchiveDetail from '@src/ArchiveDetail'
+import {useKey} from 'react-use'
 import Archive from '@src/Archive'
 
 export interface WebUIProps {
@@ -17,6 +21,12 @@ const WebUI = ({children}: WebUIProps) => {
   // const isPageOpened = useMemo(() => {
   //   return !!router.query.page
   // }, [router.query.page])
+
+  useKey('Escape', (e) => {
+    e.preventDefault()
+
+    router.push('/', undefined, {shallow: true})
+  })
 
   return (
     <div>
@@ -54,8 +64,17 @@ const WebUI = ({children}: WebUIProps) => {
         <NavPage show={router.query.pageName === 'about'} openStartPosition={'left-top'}>
           <About />
         </NavPage>
-        <NavPage show={router.query.pageName === 'archive'} openStartPosition={'right-top'}>
+        <NavPage
+          show={router.query.pageName === 'archive' && router.query.archiveId === undefined}
+          openStartPosition={'right-top'}
+        >
           <Archive />
+        </NavPage>
+        <NavPage
+          show={router.query.pageName === 'archive' && router.query.archiveId !== undefined}
+          openStartPosition={'left-bottom'}
+        >
+          <ArchiveDetail />
         </NavPage>
       </main>
     </div>

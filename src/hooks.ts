@@ -1,12 +1,23 @@
-import {useEffect, useRef} from 'react'
+import {useCallback, useEffect, useRef} from 'react'
 
-export const useDimensions = (ref) => {
-  const dimensions = useRef({width: 0, height: 0})
+export const useDimensions = () => {
+  const containerRef = useRef<HTMLDivElement>()
+  const register = useCallback((node: HTMLDivElement) => {
+    if (!node) {
+      return
+    }
 
-  useEffect(() => {
-    dimensions.current.width = ref.current.offsetWidth
-    dimensions.current.height = ref.current.offsetHeight
+    containerRef.current = node
   }, [])
 
-  return dimensions.current
+  const getDimensions = useCallback(() => {
+    if (!containerRef.current) {
+      return
+    }
+
+    const {offsetWidth: width, offsetHeight: height} = containerRef.current
+    return {width, height}
+  }, [])
+
+  return {getDimensions, register}
 }

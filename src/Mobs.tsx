@@ -7,10 +7,13 @@ import {useAtom, useAtomValue} from 'jotai'
 import {playerAtom} from './stores'
 import {getDistance} from './utils'
 import Cursor from './Cursor'
+import {useKey} from 'react-use'
 
-export interface MobsProps {}
+export interface MobsProps {
+  onSelectMob: (mobIndex: number) => void
+}
 
-const Mobs = ({}: MobsProps) => {
+const Mobs = ({onSelectMob}: MobsProps) => {
   const sprites = useMobsSpritesheet({
     spritesheetUrls: ['/mob-sprites-0.png', '/mob-sprites-1.png', '/mob-sprites-2.png'],
     frameWidth: 200,
@@ -55,6 +58,23 @@ const Mobs = ({}: MobsProps) => {
     setFocussedMobIndex(nextFocussedIndex)
   })
 
+  useKey(
+    (e) => {
+      return e.code === 'Space' || e.code === 'Enter'
+    },
+    (e) => {
+      e.preventDefault()
+
+      if (focussedMobIndex === undefined) {
+        return
+      }
+
+      onSelectMob(focussedMobIndex)
+    },
+    undefined,
+    [focussedMobIndex, onSelectMob],
+  )
+
   return (
     <>
       {MOB_CONFIG_LIST.map((mobConfig, mobIndex) => {
@@ -81,6 +101,7 @@ const Mobs = ({}: MobsProps) => {
                 }
                 zIndex={3}
                 interactive
+                pointerdown={() => onSelectMob(mobIndex)}
                 pointermove={() => {
                   handleMouseOver(mobIndex)
                 }}
@@ -101,6 +122,7 @@ const Mobs = ({}: MobsProps) => {
                 }
                 zIndex={1}
                 interactive
+                pointerdown={() => onSelectMob(mobIndex)}
                 pointermove={() => {
                   handleMouseOver(mobIndex)
                 }}
@@ -127,6 +149,7 @@ const Mobs = ({}: MobsProps) => {
               y={mobConfig.position.y - APP_HEIGHT / 2 - OFFSET.y}
               zIndex={1}
               interactive
+              pointerdown={() => onSelectMob(mobIndex)}
               pointermove={() => {
                 handleMouseOver(mobIndex)
               }}

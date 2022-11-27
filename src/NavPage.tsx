@@ -48,23 +48,27 @@ export interface NavPageProps {
 }
 
 const NavPage = ({children, show, openStartPosition = 'left-top'}: NavPageProps) => {
-  const containerRef = useRef(null)
-  const {height} = useDimensions(containerRef)
-  const [isAnimationEnd, setIsAnimationEnd] = useState(false)
+  const {getDimensions, register} = useDimensions()
+  const [isAnimating, setIsAnimating] = useState(false)
+
+  const height = getDimensions()?.height
 
   return (
     <motion.div
       initial={false}
       animate={show ? 'open' : 'close'}
-      onAnimationEnd={() => {
-        setIsAnimationEnd(true)
+      onAnimationComplete={() => {
+        setIsAnimating(false)
       }}
-      className="fixed top-0 bottom-0 left-0 right-0 z-10 overflow-auto"
+      onAnimationStart={() => {
+        setIsAnimating(true)
+      }}
+      className="fixed top-0 bottom-0 left-0 right-0 z-10"
       variants={variants}
       custom={{height, openStartPosition}}
-      ref={containerRef}
+      ref={register}
     >
-      <div>{show || !isAnimationEnd ? children : null}</div>
+      <div className="h-full overflow-auto">{!show && !isAnimating ? null : children}</div>
     </motion.div>
   )
 }

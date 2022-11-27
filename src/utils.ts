@@ -20,6 +20,28 @@ export const getDistance = (point1: Point, point2: Point) => {
   }
 }
 
+export const divideByColumns = <T extends any>(items: T[], columns: number) => {
+  const dividedItems: T[][] = []
+
+  for (let i = 0; i < items.length; i++) {
+    const columnIndex = i % columns
+    if (!dividedItems[columnIndex]) {
+      dividedItems[columnIndex] = []
+    }
+    dividedItems[columnIndex].push(items[i])
+  }
+
+  return dividedItems
+}
+
+export function valueOrLastItem<T>(value: T | T[]) {
+  if (Array.isArray(value)) {
+    return value[value.length - 1]
+  }
+
+  return value
+}
+
 // export const checkForCharacterCollision = ({
 //   characters,
 //   player,

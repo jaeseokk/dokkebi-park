@@ -2,12 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --archive-bg-0: #7cb2ff;
+    --archive-bg-1: #4dffff;
+    --archive-bg-2: #9ac78b;
+    --archive-bg-3: #80f1b0;
+    --archive-bg-4: #ff1344;
+    --archive-bg-5: #ffb24a;
+    --archive-bg-6: #3c00ff;
+  }
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   letter-spacing: -0.04em;
   -webkit-text-size-adjust: 100%;

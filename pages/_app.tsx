@@ -1,7 +1,12 @@
 import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type {AppProps} from 'next/app'
+import {ResizeObserver} from '@juggle/resize-observer'
 
-function MyApp({ Component, pageProps }: AppProps) {
+if (typeof window !== 'undefined' && !window.ResizeObserver) {
+  window.ResizeObserver = ResizeObserver
+}
+
+function MyApp({Component, pageProps}: AppProps) {
   return <Component {...pageProps} />
 }
 

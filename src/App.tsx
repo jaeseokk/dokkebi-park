@@ -15,7 +15,10 @@ import Boundaries from './Boundaries'
 import BoundaryExceptions from './BoundaryExceptions'
 import BackgroundSound, {useBackgroundSound} from './BackgroundSound'
 
-export interface AppProps {}
+export interface AppProps {
+  onSelectMob: (mobIndex: number) => void
+  onMoveFirstArchiveDetail: () => void
+}
 
 const RESOURCES = [
   '/map.png',
@@ -29,17 +32,23 @@ const RESOURCES = [
   '/mob-sprites-2.png',
 ]
 
-const App = ({}: AppProps) => {
+const App = ({onSelectMob, onMoveFirstArchiveDetail}: AppProps) => {
   return (
     <ResourceLoader resources={RESOURCES} fallback={<div>Loading...</div>}>
-      <StateContainer />
+      <StateContainer
+        onSelectMob={onSelectMob}
+        onMoveFirstArchiveDetail={onMoveFirstArchiveDetail}
+      />
     </ResourceLoader>
   )
 }
 
-interface StateContainerProps {}
+interface StateContainerProps {
+  onSelectMob: (mobIndex: number) => void
+  onMoveFirstArchiveDetail: () => void
+}
 
-const StateContainer = ({}: StateContainerProps) => {
+const StateContainer = ({onSelectMob, onMoveFirstArchiveDetail}: StateContainerProps) => {
   const [helperData] = useUpdateHelperData()
   const [cursorPosition, setCursorPosition] = useState<{x: number; y: number}>()
   const [mobsConfig, setMobsConfig] = useAtom(mobsConfigAtom)
@@ -50,6 +59,7 @@ const StateContainer = ({}: StateContainerProps) => {
         <BackgroundSound>
           <Camera>
             <Park
+              onSelectMob={onSelectMob}
               helperData={helperData}
               cursorPosition={cursorPosition}
               onChangeCursorPosition={({x, y}) => {
@@ -76,7 +86,10 @@ const StateContainer = ({}: StateContainerProps) => {
           </Camera>
         </BackgroundSound>
       </Stage>
-      <button className="absolute left-0 bottom-0 h-[9.375rem] w-[9.375rem] translate-x-[-50%] translate-y-[50%] bg-[url('/club.png')] bg-cover bg-center transition-transform hover:scale-110">
+      <button
+        className="absolute left-0 bottom-0 h-[9.375rem] w-[9.375rem] translate-x-[-50%] translate-y-[50%] bg-[url('/club.png')] bg-cover bg-center transition-transform hover:scale-110"
+        onClick={onMoveFirstArchiveDetail}
+      >
         <span className="opacity-0">!</span>
       </button>
       <button className="absolute right-0 bottom-0 h-[9.375rem] w-[9.375rem] translate-x-[50%] translate-y-[50%] bg-[url('/dict.png')] bg-cover bg-center transition-transform hover:scale-110">
@@ -88,13 +101,20 @@ const StateContainer = ({}: StateContainerProps) => {
 }
 
 interface ParkProps {
+  onSelectMob: (mobIndex: number) => void
   helperData?: HelperData
   cursorPosition?: {x: number; y: number}
   onChangeCursorPosition?: ({x, y}: {x: number; y: number}) => void
   onClick?: () => void
 }
 
-const Park = ({helperData, cursorPosition, onChangeCursorPosition, onClick}: ParkProps) => {
+const Park = ({
+  onSelectMob,
+  helperData,
+  cursorPosition,
+  onChangeCursorPosition,
+  onClick,
+}: ParkProps) => {
   const app = useApp()
   const {getViewport} = useCamera()
   const {play, stop} = useBackgroundSound()
@@ -134,7 +154,7 @@ const Park = ({helperData, cursorPosition, onChangeCursorPosition, onClick}: Par
         {/*<Boundaries />*/}
         {/*<BoundaryExceptions />*/}
         <Player />
-        <Mobs />
+        <Mobs onSelectMob={onSelectMob} />
         {/*{helperData && cursorPosition && (*/}
         {/*  <MobPositionTestCursor position={cursorPosition} helperData={helperData} />*/}
         {/*)}*/}
