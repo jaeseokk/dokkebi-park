@@ -6,8 +6,6 @@ import logo from '@public/logo.svg'
 import NavPage from '@src/NavPage'
 import About from '@src/About'
 import {useRouter} from 'next/router'
-
-import dynamic from 'next/dynamic'
 import ArchiveDetail from '@src/ArchiveDetail'
 import {useKey} from 'react-use'
 import Archive from '@src/Archive'

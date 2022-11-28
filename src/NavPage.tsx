@@ -32,11 +32,11 @@ const variants: Variants = {
         : '0 0'
     return {
       clipPath: `circle(0px at ${startPoint})`,
-      transition: {
-        type: 'spring',
-        stiffness: 20,
-        restDelta: 2,
-      },
+      // transition: {
+      //   type: 'spring',
+      //   stiffness: 20,
+      //   restDelta: 2,
+      // },
     }
   },
 }
@@ -49,7 +49,7 @@ export interface NavPageProps {
 
 const NavPage = ({children, show, openStartPosition = 'left-top'}: NavPageProps) => {
   const {getDimensions, register} = useDimensions()
-  const [isAnimating, setIsAnimating] = useState(false)
+  const [isAnimationEnd, setIsAnimationEnd] = useState(false)
 
   const height = getDimensions()?.height
 
@@ -58,17 +58,14 @@ const NavPage = ({children, show, openStartPosition = 'left-top'}: NavPageProps)
       initial={false}
       animate={show ? 'open' : 'close'}
       onAnimationComplete={() => {
-        setIsAnimating(false)
-      }}
-      onAnimationStart={() => {
-        setIsAnimating(true)
+        setIsAnimationEnd(true)
       }}
       className="fixed top-0 bottom-0 left-0 right-0 z-10"
       variants={variants}
       custom={{height, openStartPosition}}
       ref={register}
     >
-      <div className="h-full overflow-auto">{!show && !isAnimating ? null : children}</div>
+      <div className="h-full overflow-auto">{show ? children : null}</div>
     </motion.div>
   )
 }
