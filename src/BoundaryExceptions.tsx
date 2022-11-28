@@ -1,17 +1,7 @@
 import React from 'react'
-import collisionData from './collision.json'
-import {
-  APP_HEIGHT,
-  APP_WIDTH,
-  BOUNDARY_EXCEPTION_CONFIG_LIST,
-  COLLISION_SYMBOL,
-  MOB_CONFIG_LIST,
-  OFFSET,
-  PLAYER_SIZE,
-  TILE_MAP_ROW_SIZE,
-  TILE_SIZE,
-} from './constants'
+import {BOUNDARY_EXCEPTION_CONFIG_LIST, OFFSET} from './constants'
 import {Graphics} from '@inlet/react-pixi'
+import {useStageSize} from '@src/StageSizeProvider'
 
 interface BoundaryExceptionItem {
   position: {
@@ -54,6 +44,7 @@ interface BoundaryExceptionProps {
 }
 
 const BoundaryException = ({position, width, height}: BoundaryExceptionProps) => {
+  const size = useStageSize()
   const draw = React.useCallback(
     (g) => {
       g.clear()
@@ -67,8 +58,8 @@ const BoundaryException = ({position, width, height}: BoundaryExceptionProps) =>
     <Graphics
       draw={draw}
       position={{
-        x: position.x - APP_WIDTH / 2,
-        y: position.y - APP_HEIGHT / 2,
+        x: position.x - size.width / 2,
+        y: position.y - size.height / 2,
       }}
     />
   )

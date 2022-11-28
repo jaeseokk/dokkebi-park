@@ -1,8 +1,6 @@
 import React from 'react'
 import collisionData from './collision.json'
 import {
-  APP_HEIGHT,
-  APP_WIDTH,
   COLLISION_SYMBOL,
   MOB_CONFIG_LIST,
   OFFSET,
@@ -11,6 +9,7 @@ import {
   TILE_SIZE,
 } from './constants'
 import {Graphics} from '@inlet/react-pixi'
+import {useStageSize} from '@src/StageSizeProvider'
 
 const collisionsMap: number[][] = []
 for (let i = 0; i < collisionData.length; i += TILE_MAP_ROW_SIZE) {
@@ -87,6 +86,7 @@ interface BoundaryProps {
 }
 
 const Boundary = ({position, width, height}: BoundaryProps) => {
+  const size = useStageSize()
   const draw = React.useCallback(
     (g) => {
       g.clear()
@@ -100,8 +100,8 @@ const Boundary = ({position, width, height}: BoundaryProps) => {
     <Graphics
       draw={draw}
       position={{
-        x: position.x - APP_WIDTH / 2,
-        y: position.y - APP_HEIGHT / 2,
+        x: position.x - size.width / 2,
+        y: position.y - size.height / 2,
       }}
     />
   )

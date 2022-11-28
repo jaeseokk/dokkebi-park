@@ -56,7 +56,7 @@ const WebUI = ({children}: WebUIProps) => {
         </nav>
       </header>
       <main className="relative flex h-[36rem] w-[64rem] items-center justify-center">
-        <div className="fixed left-1/2 top-[8.25rem] flex h-[36rem] w-[64rem] translate-x-[-50%] items-center justify-center">
+        <div className="fixed left-0 top-0 right-0 bottom-0 flex items-center justify-center">
           {children}
         </div>
         <NavPage show={router.query.pageName === 'about'} openStartPosition={'left-top'}>

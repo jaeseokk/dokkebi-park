@@ -10,6 +10,7 @@ import {boundaries} from './Boundaries'
 import {boundaryExceptions} from './BoundaryExceptions'
 import {useAtom} from 'jotai'
 import {playerAtom} from './stores'
+import {useStageSize} from '@src/StageSizeProvider'
 
 export type PlayerAnimationStatus = 'idle' | 'walk' | 'run'
 export type PlayerDirection = 'up' | 'down' | 'left' | 'right'
@@ -67,6 +68,7 @@ const getNextPosition = (
 export interface PlayerProps {}
 
 export const Player = ({}: PlayerProps) => {
+  const size = useStageSize()
   const downSprites = useSpritesheet({
     spritesheetUrl: '/playerDown.png',
     frameWidth: 48,
@@ -183,8 +185,8 @@ export const Player = ({}: PlayerProps) => {
         texture={currentSprite}
         anchor={[0.5, 1]}
         scale={1}
-        x={player.position.x - APP_WIDTH / 2}
-        y={player.position.y - APP_HEIGHT / 2}
+        x={player.position.x - size.width / 2}
+        y={player.position.y - size.height / 2}
         zIndex={2}
       />
     </>

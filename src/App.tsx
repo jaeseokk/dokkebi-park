@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import {Container, Sprite, Stage, useApp} from '@inlet/react-pixi'
 import Camera, {useCamera} from './Camera'
 import Player from './Player'
-import {APP_HEIGHT, APP_WIDTH, OFFSET} from './constants'
+import {OFFSET} from './constants'
 import * as PIXI from 'pixi.js'
 import ResourceLoader from './ResourceLoader'
 import Mobs from './Mobs'
@@ -11,9 +11,9 @@ import produce from 'immer'
 import {useAtom} from 'jotai'
 import {mobsConfigAtom} from './stores'
 import {useUpdateHelperData} from './useUpdateHelperData'
-import Boundaries from './Boundaries'
-import BoundaryExceptions from './BoundaryExceptions'
 import BackgroundSound, {useBackgroundSound} from './BackgroundSound'
+import {useContextBridge} from '@src/useContextBridge'
+import {StageSizeContext, StageSizeProvider, useStageSize} from '@src/StageSizeProvider'
 
 export interface AppProps {
   onSelectMob: (mobIndex: number) => void
@@ -34,12 +34,14 @@ const RESOURCES = [
 
 const App = ({onSelectMob, onMoveFirstArchiveDetail}: AppProps) => {
   return (
-    <ResourceLoader resources={RESOURCES} fallback={<div>Loading...</div>}>
-      <StateContainer
-        onSelectMob={onSelectMob}
-        onMoveFirstArchiveDetail={onMoveFirstArchiveDetail}
-      />
-    </ResourceLoader>
+    <StageSizeProvider>
+      <ResourceLoader resources={RESOURCES} fallback={<div>Loading...</div>}>
+        <StateContainer
+          onSelectMob={onSelectMob}
+          onMoveFirstArchiveDetail={onMoveFirstArchiveDetail}
+        />
+      </ResourceLoader>
+    </StageSizeProvider>
   )
 }
 
@@ -49,50 +51,54 @@ interface StateContainerProps {
 }
 
 const StateContainer = ({onSelectMob, onMoveFirstArchiveDetail}: StateContainerProps) => {
+  const size = useStageSize()
   const [helperData] = useUpdateHelperData()
   const [cursorPosition, setCursorPosition] = useState<{x: number; y: number}>()
   const [mobsConfig, setMobsConfig] = useAtom(mobsConfigAtom)
+  const StageSizeContextBridge = useContextBridge(StageSizeContext)
 
   return (
     <>
-      <Stage width={APP_WIDTH} height={APP_HEIGHT} options={{backgroundAlpha: 0}}>
-        <BackgroundSound>
-          <Camera>
-            <Park
-              onSelectMob={onSelectMob}
-              helperData={helperData}
-              cursorPosition={cursorPosition}
-              onChangeCursorPosition={({x, y}) => {
-                setCursorPosition({x, y})
-              }}
-              onClick={() => {
-                const x = cursorPosition
-                  ? Math.round(cursorPosition.x + APP_WIDTH / 2 + OFFSET.x)
-                  : 0
-                const y = cursorPosition
-                  ? Math.round(cursorPosition.y + APP_HEIGHT / 2 + OFFSET.y)
-                  : 0
+      <Stage {...size} options={{backgroundColor: 0x005ed0}}>
+        <StageSizeContextBridge>
+          <BackgroundSound>
+            <Camera>
+              <Park
+                onSelectMob={onSelectMob}
+                helperData={helperData}
+                cursorPosition={cursorPosition}
+                onChangeCursorPosition={({x, y}) => {
+                  setCursorPosition({x, y})
+                }}
+                onClick={() => {
+                  const x = cursorPosition
+                    ? Math.round(cursorPosition.x + size.width / 2 + OFFSET.x)
+                    : 0
+                  const y = cursorPosition
+                    ? Math.round(cursorPosition.y + size.height / 2 + OFFSET.y)
+                    : 0
 
-                setMobsConfig(
-                  produce(mobsConfig, (draft) => {
-                    draft[helperData.index] = {
-                      position: {x, y},
-                      scale: helperData.scale,
-                    }
-                  }),
-                )
-              }}
-            />
-          </Camera>
-        </BackgroundSound>
+                  setMobsConfig(
+                    produce(mobsConfig, (draft) => {
+                      draft[helperData.index] = {
+                        position: {x, y},
+                        scale: helperData.scale,
+                      }
+                    }),
+                  )
+                }}
+              />
+            </Camera>
+          </BackgroundSound>
+        </StageSizeContextBridge>
       </Stage>
       <button
-        className="absolute left-0 bottom-0 h-[9.375rem] w-[9.375rem] translate-x-[-50%] translate-y-[50%] bg-[url('/club.png')] bg-cover bg-center transition-transform hover:scale-110"
+        className="absolute left-6 bottom-6 h-[9.375rem] w-[9.375rem] bg-[url('/club.png')] bg-cover bg-center transition-transform hover:scale-110"
         onClick={onMoveFirstArchiveDetail}
       >
         <span className="opacity-0">!</span>
       </button>
-      <button className="absolute right-0 bottom-0 h-[9.375rem] w-[9.375rem] translate-x-[50%] translate-y-[50%] bg-[url('/dict.png')] bg-cover bg-center transition-transform hover:scale-110">
+      <button className="absolute right-6 bottom-6 h-[9.375rem] w-[9.375rem] bg-[url('/dict.png')] bg-cover bg-center transition-transform hover:scale-110">
         <span className="opacity-0">!</span>
       </button>
       {/*<MobsHelper cursorPosition={cursorPosition} />*/}
@@ -116,6 +122,7 @@ const Park = ({
   onClick,
 }: ParkProps) => {
   const app = useApp()
+  const size = useStageSize()
   const {getViewport} = useCamera()
   const {play, stop} = useBackgroundSound()
 
@@ -148,7 +155,7 @@ const Park = ({
         }}
         pointerdown={onClick}
       >
-        <Container position={[-APP_WIDTH / 2 - OFFSET.x, -APP_HEIGHT / 2 - OFFSET.y]} zIndex={0}>
+        <Container position={[-size.width / 2 - OFFSET.x, -size.height / 2 - OFFSET.y]} zIndex={0}>
           <Map />
         </Container>
         {/*<Boundaries />*/}

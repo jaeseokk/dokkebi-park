@@ -1,19 +1,21 @@
 import React, {useRef, useState} from 'react'
 import {Sprite, useTick} from '@inlet/react-pixi'
-import {APP_HEIGHT, APP_WIDTH, MOB_CONFIG_LIST, OFFSET} from './constants'
+import {MOB_CONFIG_LIST, OFFSET} from './constants'
 import {useMobsSpritesheet} from './useMobsSpritesheet'
 import {useBreath} from './useBreath'
-import {useAtom, useAtomValue} from 'jotai'
+import {useAtomValue} from 'jotai'
 import {playerAtom} from './stores'
 import {getDistance} from './utils'
 import Cursor from './Cursor'
 import {useKey} from 'react-use'
+import {useStageSize} from '@src/StageSizeProvider'
 
 export interface MobsProps {
   onSelectMob: (mobIndex: number) => void
 }
 
 const Mobs = ({onSelectMob}: MobsProps) => {
+  const size = useStageSize()
   const sprites = useMobsSpritesheet({
     spritesheetUrls: ['/mob-sprites-0.png', '/mob-sprites-1.png', '/mob-sprites-2.png'],
     frameWidth: 200,
@@ -90,10 +92,10 @@ const Mobs = ({onSelectMob}: MobsProps) => {
                 texture={textureTuple[0]}
                 anchor={[0.5, 1]}
                 scale={scale}
-                x={mobConfig.position.x - APP_WIDTH / 2 - OFFSET.x}
+                x={mobConfig.position.x - size.width / 2 - OFFSET.x}
                 y={
                   mobConfig.position.y -
-                  APP_HEIGHT / 2 -
+                  size.height / 2 -
                   OFFSET.y +
                   (textureTuple[0].height + textureTuple[1].height) *
                     (0.5 - boundaryHeightScale) *
@@ -111,10 +113,10 @@ const Mobs = ({onSelectMob}: MobsProps) => {
                 texture={textureTuple[1]}
                 anchor={[0.5, 0]}
                 scale={scale}
-                x={mobConfig.position.x - APP_WIDTH / 2 - OFFSET.x}
+                x={mobConfig.position.x - size.width / 2 - OFFSET.x}
                 y={
                   mobConfig.position.y -
-                  APP_HEIGHT / 2 -
+                  size.height / 2 -
                   OFFSET.y +
                   (textureTuple[0].height + textureTuple[1].height) *
                     (0.5 - boundaryHeightScale) *
@@ -130,8 +132,8 @@ const Mobs = ({onSelectMob}: MobsProps) => {
               />
               {focussedMobIndex === mobIndex && (
                 <Cursor
-                  x={mobConfig.position.x - APP_WIDTH / 2 - OFFSET.x}
-                  y={mobConfig.position.y - APP_HEIGHT / 2 - OFFSET.y}
+                  x={mobConfig.position.x - size.width / 2 - OFFSET.x}
+                  y={mobConfig.position.y - size.height / 2 - OFFSET.y}
                   zIndex={4}
                 />
               )}
@@ -145,8 +147,8 @@ const Mobs = ({onSelectMob}: MobsProps) => {
               texture={textureTuple[1]}
               anchor={[0.5, 0.5]}
               scale={scale}
-              x={mobConfig.position.x - APP_WIDTH / 2 - OFFSET.x}
-              y={mobConfig.position.y - APP_HEIGHT / 2 - OFFSET.y}
+              x={mobConfig.position.x - size.width / 2 - OFFSET.x}
+              y={mobConfig.position.y - size.height / 2 - OFFSET.y}
               zIndex={1}
               interactive
               pointerdown={() => onSelectMob(mobIndex)}
@@ -157,8 +159,8 @@ const Mobs = ({onSelectMob}: MobsProps) => {
             />
             {focussedMobIndex === mobIndex && (
               <Cursor
-                x={mobConfig.position.x - APP_WIDTH / 2 - OFFSET.x}
-                y={mobConfig.position.y - APP_HEIGHT / 2 - OFFSET.y}
+                x={mobConfig.position.x - size.width / 2 - OFFSET.x}
+                y={mobConfig.position.y - size.height / 2 - OFFSET.y}
                 zIndex={4}
               />
             )}
