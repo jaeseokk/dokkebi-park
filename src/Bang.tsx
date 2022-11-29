@@ -49,7 +49,6 @@ const Bang = forwardRef<BangRef, BangProps>(({...rest}, ref) => {
               setShow(false)
               resolve()
             }
-            console.log('play')
             spriteRef.current.play()
           })
         },

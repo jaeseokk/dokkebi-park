@@ -9,8 +9,6 @@ import {useRouter} from 'next/router'
 import ArchiveDetail from '@src/ArchiveDetail'
 import {useKey} from 'react-use'
 import Archive from '@src/Archive'
-import {useAtomValue} from 'jotai'
-import {isAppStartedAtom, playerAnimationStatusAtom, playerAtom} from '@src/stores'
 import {motion} from 'framer-motion'
 
 const menuVariants = {
@@ -30,24 +28,15 @@ const menuVariants = {
 
 export interface WebUIProps {
   children: React.ReactNode
+  isAppStarted: boolean
+  isPageOpened: boolean
+  showMenu: boolean
+  showHeader: boolean
   onMoveArchivePage: () => void
 }
 
-const WebUI = ({children, onMoveArchivePage}: WebUIProps) => {
+const WebUI = ({children, isAppStarted, showHeader, showMenu, onMoveArchivePage}: WebUIProps) => {
   const router = useRouter()
-  const playerAnimationStatus = useAtomValue(playerAnimationStatusAtom)
-  const isAppStarted = useAtomValue(isAppStartedAtom)
-  const isPageOpened = useMemo(() => {
-    return !!router.query.pageName
-  }, [router.query.pageName])
-  const showMenu = isPageOpened || (playerAnimationStatus === 'idle' && !isPageOpened)
-  const showHeader = isPageOpened || !isAppStarted
-
-  useKey('Escape', (e) => {
-    e.preventDefault()
-
-    router.push('/', undefined, {shallow: true})
-  })
 
   return (
     <div>

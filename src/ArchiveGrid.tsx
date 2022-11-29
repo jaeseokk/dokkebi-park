@@ -20,11 +20,11 @@ const ArchiveGrid = ({containerWidth}: ArchiveGridProps) => {
       }}
     >
       <DraggableGrid dragEnabled={false}>
-        {CONTENTS.map(({title, desc}, itemIndex) => (
+        {CONTENTS.map(({title, desc, images}, itemIndex) => (
           <DraggableItem className="cursor-auto" key={itemIndex}>
             <div
               style={{
-                width: containerWidth / COLUMN_COUNT - (GAP / 2) * (COLUMN_COUNT - 1),
+                width: (containerWidth - GAP * (COLUMN_COUNT - 1)) / COLUMN_COUNT,
                 margin: GAP / 2,
               }}
             >
@@ -33,6 +33,7 @@ const ArchiveGrid = ({containerWidth}: ArchiveGridProps) => {
                   <ArchiveItem
                     title={title}
                     desc={desc}
+                    images={images}
                     colorIndex={itemIndex % COLOR_SET.length}
                   />
                 </a>

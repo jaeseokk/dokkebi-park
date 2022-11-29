@@ -4,9 +4,9 @@ export interface NavButtonProps extends React.ComponentPropsWithoutRef<'a'> {
   children: string
 }
 
-const NavButton = forwardRef<HTMLAnchorElement, NavButtonProps>(({children, ...rest}) => {
+const NavButton = forwardRef<HTMLAnchorElement, NavButtonProps>(({children, ...rest}, ref) => {
   return (
-    <a className="group" {...rest}>
+    <a className="group" {...rest} ref={ref}>
       {children.split('').map((char, charIndex) => (
         <span
           key={`${charIndex}_${char}`}

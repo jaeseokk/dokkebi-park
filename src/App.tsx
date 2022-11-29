@@ -11,6 +11,8 @@ import BackgroundSoundProvider, {useBackgroundSound} from './BackgroundSoundProv
 import {useContextBridge} from '@src/useContextBridge'
 import {StageSizeContext, StageSizeProvider, useStageSize} from '@src/StageSizeProvider'
 import Bang, {BangRef} from '@src/Bang'
+import Boundaries from '@src/Boundaries'
+import BoundaryExceptions from '@src/BoundaryExceptions'
 
 export interface AppRef {
   playBang: () => void
@@ -43,11 +45,13 @@ const RESOURCES = [
 ]
 
 export interface AppProps {
+  isPlaying: boolean
   forwardedRef: React.Ref<AppRef>
+  playSound: boolean
   onSelectMob: (mobIndex: number) => void
 }
 
-const App = ({onSelectMob, forwardedRef}: AppProps) => {
+const App = ({isPlaying, playSound, onSelectMob, forwardedRef}: AppProps) => {
   const bangRef = useRef<BangRef>(null)
 
   useImperativeHandle(
@@ -66,7 +70,7 @@ const App = ({onSelectMob, forwardedRef}: AppProps) => {
     <StageSizeProvider>
       <ResourceLoader resources={RESOURCES} fallback={<div>Loading...</div>}>
         <StateContainer>
-          <Park onSelectMob={onSelectMob} />
+          <Park isPlaying={isPlaying} playSound={playSound} onSelectMob={onSelectMob} />
           <Bang zIndex={10} ref={bangRef} />
         </StateContainer>
       </ResourceLoader>
@@ -95,13 +99,12 @@ const StateContainer = ({children}: StateContainerProps) => {
 }
 
 interface ParkProps {
+  isPlaying: boolean
+  playSound: boolean
   onSelectMob: (mobIndex: number) => void
-  helperData?: HelperData
-  cursorPosition?: {x: number; y: number}
-  onChangeCursorPosition?: ({x, y}: {x: number; y: number}) => void
 }
 
-const Park = ({onSelectMob}: ParkProps) => {
+const Park = ({isPlaying, playSound, onSelectMob}: ParkProps) => {
   const app = useApp()
   const size = useStageSize()
 
@@ -111,28 +114,34 @@ const Park = ({onSelectMob}: ParkProps) => {
     <Camera>
       <Container sortableChildren interactive>
         <Container position={[-size.width / 2 - OFFSET.x, -size.height / 2 - OFFSET.y]} zIndex={0}>
-          <Map />
+          <Map playSound={playSound} />
         </Container>
-        {/*<Boundaries />*/}
-        {/*<BoundaryExceptions />*/}
-        <Player />
+        <Boundaries />
+        <BoundaryExceptions />
+        <Player isPlaying={isPlaying} />
         <Mobs onSelectMob={onSelectMob} />
       </Container>
     </Camera>
   )
 }
 
-interface MapProps {}
+interface MapProps {
+  playSound: boolean
+}
 
-const Map = ({}: MapProps) => {
-  const {play, stop} = useBackgroundSound()
+const Map = ({playSound}: MapProps) => {
+  const {play, stop, pause} = useBackgroundSound()
 
   useEffect(() => {
-    play()
+    if (playSound) {
+      play()
+    } else {
+      pause()
+    }
     return () => {
       stop()
     }
-  }, [])
+  }, [playSound])
 
   const texture = PIXI.utils.TextureCache['/map.png']
   // const texture = PIXI.utils.TextureCache['/map_with_mobs_info.png']

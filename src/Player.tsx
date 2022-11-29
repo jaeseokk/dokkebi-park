@@ -62,9 +62,11 @@ const getNextPosition = (
   return isColliding ? null : nextPosition
 }
 
-export interface PlayerProps {}
+export interface PlayerProps {
+  isPlaying: boolean
+}
 
-export const Player = ({}: PlayerProps) => {
+export const Player = ({isPlaying}: PlayerProps) => {
   const size = useStageSize()
   const downSprites = useSpritesheet({
     spritesheetUrl: '/playerDown.png',
@@ -104,6 +106,10 @@ export const Player = ({}: PlayerProps) => {
   const currentSprite = currentSprites[Math.floor(frame)]
 
   useTick((delta) => {
+    if (!isPlaying) {
+      return
+    }
+
     if (player.state.animationStatus === 'idle') {
       return
     }
@@ -116,6 +122,10 @@ export const Player = ({}: PlayerProps) => {
   })
 
   useTick((delta) => {
+    if (!isPlaying) {
+      return
+    }
+
     let velocity = {x: 0, y: 0}
     let direction = player.state.direction
 

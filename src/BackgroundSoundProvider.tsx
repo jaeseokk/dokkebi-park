@@ -27,11 +27,16 @@ const BackgroundSoundProvider = ({children}: BackgroundSoundProviderProps) => {
     sound.stop('background')
   }
 
+  const pause = () => {
+    sound.pause('background')
+  }
+
   return (
     <BackgroundSoundContext.Provider
       value={{
         play,
         stop,
+        pause,
       }}
     >
       {children}
@@ -42,6 +47,7 @@ const BackgroundSoundProvider = ({children}: BackgroundSoundProviderProps) => {
 export interface BackgroundSoundContextProps {
   play: () => void
   stop: () => void
+  pause: () => void
 }
 
 export const BackgroundSoundContext = React.createContext<BackgroundSoundContextProps | null>(null)
