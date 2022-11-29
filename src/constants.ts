@@ -17,6 +17,19 @@ export const OFFSET = {
   y: 400,
 }
 
+export const VIDEOS = [
+  'https://youtu.be/hIe7SBGCIg4',
+  'https://youtu.be/SWHpajFlr9s',
+  'https://youtu.be/yoWMu_TxfEE',
+  'https://youtu.be/80gyOuzswHg',
+  'https://youtu.be/9uYy9o3JKSU',
+  'https://youtu.be/l1z9Fc3aR20',
+  'https://youtu.be/hP81o1-7-go',
+  'https://youtu.be/Ny-csc3tGwY',
+  'https://youtu.be/P17_urwCukQ',
+  'https://youtu.be/vqiENXphx1I',
+]
+
 export interface MobConfig {
   scale?: number
   position: {x: number; y: number}

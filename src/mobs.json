@@ -1,0 +1,6043 @@
+{
+  "data": [
+    {
+      "id": "AD1",
+      "region": "A",
+      "url": "/mobs/DOKKEBI_01.png",
+      "desc": "동그란 배와 새끼 두마리",
+      "group": "몬스터",
+      "size": "중",
+      "type": "의자 형태"
+    },
+    {
+      "id": "AD2",
+      "region": "A",
+      "url": "/mobs/DOKKEBI_02.png",
+      "desc": "도깨비 가면 체험 건물",
+      "group": "캐슬",
+      "size": "대",
+      "type": "건물"
+    },
+    {
+      "id": "AD3",
+      "region": "A",
+      "url": "/mobs/DOKKEBI_03.png",
+      "desc": "스피커가 달린 건물",
+      "group": "몬스터",
+      "size": "h5.1 w6.3 d4.1 대",
+      "type": "조형물/건물/스피커가 붙어있음"
+    },
+    {
+      "id": "AD4",
+      "region": "A",
+      "url": "/mobs/DOKKEBI_04.png",
+      "desc": "검정 표지판",
+      "group": "귀신",
+      "size": "중",
+      "type": "표지판"
+    },
+    {
+      "id": "AD5",
+      "region": "A",
+      "url": "/mobs/DOKKEBI_05.png",
+      "desc": "낮은 표지판",
+      "group": "귀신",
+      "size": "소",
+      "type": "표지판"
+    },
+    {
+      "id": "BD1",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_06.png",
+      "desc": "치마입은 길쭉이",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "BD2",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_07.png",
+      "desc": "두얼굴",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD3",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_08.png",
+      "desc": "엑스",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD4",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_09.png",
+      "desc": "배불뚝",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "BD5",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_10.png",
+      "desc": "물음표",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD6",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_11.png",
+      "desc": "배하트",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD7",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_12.png",
+      "desc": "쌍둥오리",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD8",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_13.png",
+      "desc": "별가사리",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD9",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_14.png",
+      "desc": "뾰족 그림자",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "BD10",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_15.png",
+      "desc": "짝눈",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD11",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_16.png",
+      "desc": "하트삼",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD12",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_17.png",
+      "desc": "외눈",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD13",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_18.png",
+      "desc": "화난 외눈",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD14",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_19.png",
+      "desc": "잘린다리 바라보는 남자친구",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD15",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_20.png",
+      "desc": "깜짝놀란 여자친구",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD16",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_21.png",
+      "desc": "머리에 못",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD17",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_22.png",
+      "desc": "수줍은 고백",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD18",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_23.png",
+      "desc": "삼눈",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD19",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_24.png",
+      "desc": "넙적한 수줍은 고백",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD20",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_25.png",
+      "desc": "말붕어",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD21",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_26.png",
+      "desc": "얼굴 네모 말",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD22",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_27.png",
+      "desc": "코가 네모 말",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD23",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_28.png",
+      "desc": "초록얼굴 귀신",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "BD24",
+      "region": "B",
+      "url": "/mobs/DOKKEBI_29.png",
+      "desc": "배불뚝",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD1",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_30.png",
+      "desc": "노랑파랑 튤립",
+      "group": "식물",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD2",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_31.png",
+      "desc": "도깨비 왕",
+      "group": "몬스터",
+      "size": "h5.7 d1.5 w4.8 대",
+      "type": "조형물/건물"
+    },
+    {
+      "id": "CD3",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_32.png",
+      "desc": "해바라기",
+      "group": "식물",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD4",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_33.png",
+      "desc": "독 꽃",
+      "group": "식물",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD5",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_34.png",
+      "desc": "돌 - 머리에 화분",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD6",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_35.png",
+      "desc": "돌 - 입에 화분",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD7",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_36.png",
+      "desc": "돌 - 개구리",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD8",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_37.png",
+      "desc": "돌 - 아기귀신",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD9",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_38.png",
+      "desc": "돌 - 엎어진 햇님",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD10",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_39.png",
+      "desc": "돌 - 반쪽 얼굴",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD11",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_40.png",
+      "desc": "돌 - 돌위에 미니 도자기 두개",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD12",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_41.png",
+      "desc": "돌 - 돌위에 미니 도자기 세 개",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD13",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_42.png",
+      "desc": "돌 - 돌위에 미니 도자기 깨뽀",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD14",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_43.png",
+      "desc": "돌 - 귀신돌 위에 미니 도깨비",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD15",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_44.png",
+      "desc": "돌 - 돌위에 돌하르방",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD16",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_45.png",
+      "desc": "양손 든 미니 도자기",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD17",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_46.png",
+      "desc": "돌 - 돌위에 미니 돌",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD18",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_47.png",
+      "desc": "돌 - 돌위에 아이들과 삼몽령",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD19",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_48.png",
+      "desc": "절규하는 작은 도깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD20",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_49.png",
+      "desc": "돌로 둔갑",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD21",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_50.png",
+      "desc": "돌 네개 머리",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD22",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_51.png",
+      "desc": "돌로 둔갑",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD23",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_52.png",
+      "desc": "돌 위에서 낮잠",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD24",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_53.png",
+      "desc": "돌 위에 입큰이",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD25",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_54.png",
+      "desc": "돌로 둔갑하는 고양이",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD26",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_55.png",
+      "desc": "돌 위에 작은 집",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD27",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_56.png",
+      "desc": "돌 위에 제우스 와 인간",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD28",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_57.png",
+      "desc": "돌 위에 말의 얼굴",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD29",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_58.png",
+      "desc": "돌 위에 앉아있는 뾰족이",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD30",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_59.png",
+      "desc": "관 문지기 ",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD31",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_60.png",
+      "desc": "대장도깨비가 잠들어있는 기념관",
+      "group": "캐슬",
+      "size": "대",
+      "type": "건물"
+    },
+    {
+      "id": "CD32",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_61.png",
+      "desc": "관 문지기",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CT1",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_62.png",
+      "desc": "아빠 나무",
+      "group": "신",
+      "size": "대",
+      "type": "나무"
+    },
+    {
+      "id": "CD33",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_63.png",
+      "desc": "노랑 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD34",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_64.png",
+      "desc": "녹이낀 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD35",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_65.png",
+      "desc": "얼굴만 옥색 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD36",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_66.png",
+      "desc": "신난 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD37",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_67.png",
+      "desc": "느영나영 상징문",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD38",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_68.png",
+      "desc": "손벌린 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD39",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_69.png",
+      "desc": "분홍 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD40",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_70.png",
+      "desc": "손이 여러개인 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD41",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_71.png",
+      "desc": "철조망에 둘러쌓인 둠칫둠칫 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD42",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_72.png",
+      "desc": "한다리 든 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD43",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_73.png",
+      "desc": "팔 길쭉 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD44",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_74.png",
+      "desc": "팔 길쭉 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD45",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_75.png",
+      "desc": "머리가 두개인 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD46",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_76.png",
+      "desc": "팔벌린 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD47",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_77.png",
+      "desc": "둠칫둠칫 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD48",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_78.png",
+      "desc": "불분명 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD49",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_79.png",
+      "desc": "팔벌린 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD50",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_80.png",
+      "desc": "노랑 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD51",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_81.png",
+      "desc": "느영나영 상징물 ",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD52",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_82.png",
+      "desc": "느영나영 상징물",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD53",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_83.png",
+      "desc": "얼굴 두개 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD54",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_84.png",
+      "desc": "주저앉은 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD55",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_85.png",
+      "desc": "문귀신",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD56",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_86.png",
+      "desc": "다리벌린 느영나영",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD57",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_87.png",
+      "desc": "미니 소",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD58",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_88.png",
+      "desc": "네모 얼굴 하루방 ",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD59",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_89.png",
+      "desc": "동그란 전통 도깨비",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD60",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_90.png",
+      "desc": "네모 전통 도깨비",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD61",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_91.png",
+      "desc": "다리 꼬고 낮잠",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD62",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_92.png",
+      "desc": "네모 전통 도깨비",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD63",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_93.png",
+      "desc": "거친 귀신",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD64",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_94.png",
+      "desc": "재규어 얼굴",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD65",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_95.png",
+      "desc": "이빨",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD66",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_96.png",
+      "desc": "뒤로 쓰러진 녀석",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD67",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_97.png",
+      "desc": "작은 노란 노깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD68",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_98.png",
+      "desc": "정승 귀신",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD69",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_99.png",
+      "desc": "기하학",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD70",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_100.png",
+      "desc": "눈 세 개",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD71",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_101.png",
+      "desc": "두 얼굴 의자",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물/의자"
+    },
+    {
+      "id": "CD72",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_102.png",
+      "desc": "옥색 기하학",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD73",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_103.png",
+      "desc": "늙은 귀신",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD74",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_104.png",
+      "desc": "흰색 기하학",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD75",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_105.png",
+      "desc": "검정 기하학",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD76",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_106.png",
+      "desc": "모자 쓴 기하학",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD77",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_107.png",
+      "desc": "네모 눈",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD78",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_108.png",
+      "desc": "\"춤추는 기억",
+      "group": " 니은\"",
+      "size": "귀신",
+      "type": "중"
+    },
+    {
+      "id": "CD79",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_109.png",
+      "desc": "코가 별",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD80",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_110.png",
+      "desc": "붉은 도마뱀",
+      "group": "동물",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD81",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_111.png",
+      "desc": "반반",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD82",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_112.png",
+      "desc": "상어",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD83",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_113.png",
+      "desc": "손가락 별",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD84",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_114.png",
+      "desc": "악어",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD85",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_115.png",
+      "desc": "도톰 입술",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD86",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_116.png",
+      "desc": "서프라이즈",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD87",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_117.png",
+      "desc": "눈이 초록",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD88",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_118.png",
+      "desc": "꽃게와 물고기와 아기 용",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD89",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_119.png",
+      "desc": "반반",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD90",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_120.png",
+      "desc": "익살맞은 코 악어",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "CD91",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_121.png",
+      "desc": "길다란 신선",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD92",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_122.png",
+      "desc": "초록 원숭이",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD93",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_123.png",
+      "desc": "눈 튀어나온 개구리",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD94",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_124.png",
+      "desc": "선인장",
+      "group": "식물",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "CD95",
+      "region": "C",
+      "url": "/mobs/DOKKEBI_125.png",
+      "desc": "연못",
+      "group": "귀신",
+      "size": "대",
+      "type": "조형물"
+    },
+    {
+      "id": "DD1",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_126.png",
+      "desc": "파란 도깨비 불",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "DD2",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_127.png",
+      "desc": "제멋대로 눈코입",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "DD3",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_128.png",
+      "desc": "연두색 눈",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "DD4",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_129.png",
+      "desc": "꽃을 품은 액체 몬스터",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "DD5",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_130.png",
+      "desc": "부서진 상반신",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "DD6",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_131.png",
+      "desc": "파란 귀신",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "DD7",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_132.png",
+      "desc": "미완성",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "DD8",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_133.png",
+      "desc": "얼굴 이모티콘",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "DD9",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_134.png",
+      "desc": "얼굴 이모티콘",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "DD10",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_135.png",
+      "desc": "쏘우",
+      "group": "터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "DD11",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_136.png",
+      "desc": "윙크 돼지",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "DD12",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_137.png",
+      "desc": "철퇴를 든 아줌마",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "DD13",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_138.png",
+      "desc": "방망이를 든 아기",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "DD14",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_139.png",
+      "desc": "해리포터",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "DD15",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_140.png",
+      "desc": "신부",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "DD16",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_141.png",
+      "desc": "신랑",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "DD17",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_142.png",
+      "desc": "짝 눈",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "DD18",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_143.png",
+      "desc": "형과 동생",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "DD19",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_144.png",
+      "desc": "헤라클래스",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "DD20",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_145.png",
+      "desc": "별 모양 얼굴",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "DD21",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_146.png",
+      "desc": "슬픈 정승",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "DD22",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_147.png",
+      "desc": "길쭉한 코",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "DD23",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_148.png",
+      "desc": "파란 입술",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "DD24",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_149.png",
+      "desc": "길쭉이",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "DD25",
+      "region": "D",
+      "url": "/mobs/DOKKEBI_150.png",
+      "desc": "하트",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "ED1",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_151.png",
+      "desc": "\"돌아봐세바퀴",
+      "group": " 세상에서 제일 큰 부적\"",
+      "size": "타워",
+      "type": "H4.7 w2.2 d2.2 대"
+    },
+    {
+      "id": "ED2",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_152.png",
+      "desc": "왕도깨비 여자친구",
+      "group": "몬스터",
+      "size": "H7 d1.4 w4.9 대",
+      "type": "조형물/건물"
+    },
+    {
+      "id": "ED3",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_153.png",
+      "desc": "숭이깨비",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "ED4",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_154.png",
+      "desc": "토토속형제",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "ED5",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_155.png",
+      "desc": "무등탄 형",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "ED6",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_156.png",
+      "desc": "옥색 숭이",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "ED7",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_157.png",
+      "desc": "뾰족 숭이",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "ED8",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_158.png",
+      "desc": "도깨비 초창기 왕 얼굴",
+      "group": "몬스터",
+      "size": "H4 d0.14 w11 대",
+      "type": "조형물"
+    },
+    {
+      "id": "ED9",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_159.png",
+      "desc": "성 입구",
+      "group": "캐슬",
+      "size": "H7.4 d2.9 w14 대",
+      "type": "건물"
+    },
+    {
+      "id": "ED10",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_160.png",
+      "desc": "여자 막대",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "ED11",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_161.png",
+      "desc": "남자 막대",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "ED12",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_162.png",
+      "desc": "도깨비 불",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "ED13",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_163.png",
+      "desc": "수염난 숭이",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "ED14",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_164.png",
+      "desc": "옥색 숭이",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ED15",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_165.png",
+      "desc": "별 숭이",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ED16",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_166.png",
+      "desc": "꼬부랑 꽈배기 정승",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "ED17",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_167.png",
+      "desc": "미니 숭이",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ED18",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_168.png",
+      "desc": "꼬부랑 정승",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "ED19",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_169.png",
+      "desc": "숭이 귀신",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ED20",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_170.png",
+      "desc": "꼬마 숭이",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ED21",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_171.png",
+      "desc": "얼굴 돌아간 숭이",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ED22",
+      "region": "E",
+      "url": "/mobs/DOKKEBI_172.png",
+      "desc": "동그라미 탑",
+      "group": "타워",
+      "size": "H3.4 w0.5 d0.4 대",
+      "type": "조형물/탑"
+    },
+    {
+      "id": "FD1",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_173.png",
+      "desc": "소국",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "FD2",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_174.png",
+      "desc": "브라질",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "FD3",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_175.png",
+      "desc": "노란 테두리",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "FD4",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_176.png",
+      "desc": "초록 위에 노란 테두리",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "FD5",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_177.png",
+      "desc": "일본",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "FD6",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_178.png",
+      "desc": "한국",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "FD7",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_179.png",
+      "desc": "파란 빛",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "FD8",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_180.png",
+      "desc": "하얀 빛",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "FD9",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_181.png",
+      "desc": "영국",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "FD10",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_182.png",
+      "desc": "하얀 빛",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "FD11",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_183.png",
+      "desc": "싱가폴",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "FD12",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_184.png",
+      "desc": "파란 빛",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "FD13",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_185.png",
+      "desc": "대만",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "FD14",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_186.png",
+      "desc": "냉장고",
+      "group": "물건",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "FD15",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_187.png",
+      "desc": "미니 개 집",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "FD16",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_188.png",
+      "desc": "돌 위에 돌하르방",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "FD17",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_189.png",
+      "desc": "납작 두꺼비",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "FD18",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_190.png",
+      "desc": "햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "FD19",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_191.png",
+      "desc": "개 집",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "FD20",
+      "region": "F",
+      "url": "/mobs/DOKKEBI_192.png",
+      "desc": "어벤저스",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD1",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_193.png",
+      "desc": "포크레인",
+      "group": "물건",
+      "size": "대",
+      "type": "포크레인"
+    },
+    {
+      "id": "GD2",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_194.png",
+      "desc": "나팔 부는 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD3",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_195.png",
+      "desc": "빗자루 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD4",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_196.png",
+      "desc": "다리미 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD5",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_197.png",
+      "desc": "선풍기 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD6",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_198.png",
+      "desc": "선풍기 머리 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD7",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_199.png",
+      "desc": "화분 네개 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD8",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_200.png",
+      "desc": "커플 전봇대 정크아트",
+      "group": "물건",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "GD9",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_201.png",
+      "desc": "굴뚝 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD10",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_202.png",
+      "desc": "꾀돌이 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD11",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_203.png",
+      "desc": "시계 수리공 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD12",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_204.png",
+      "desc": "요리사 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD13",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_205.png",
+      "desc": "장독대 위 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD14",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_206.png",
+      "desc": "장독대 위 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD15",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_207.png",
+      "desc": "장독대 위 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD16",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_208.png",
+      "desc": "숙녀아가씨 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD17",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_209.png",
+      "desc": "짱구 동생 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD18",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_210.png",
+      "desc": "수염 아저씨 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD19",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_211.png",
+      "desc": "동구리 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD20",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_212.png",
+      "desc": "로봇박사 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD21",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_213.png",
+      "desc": "로봇박사 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD22",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_214.png",
+      "desc": "관찰자 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD23",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_215.png",
+      "desc": "관찰자 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD24",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_216.png",
+      "desc": "메뚜기 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD25",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_217.png",
+      "desc": "사마귀 정크아트 ",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD26",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_218.png",
+      "desc": "허수아비 삼총사 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD27",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_219.png",
+      "desc": "원숭이 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD28",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_220.png",
+      "desc": "마우스 삼총사 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD29",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_221.png",
+      "desc": "수염 아저씨 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD30",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_222.png",
+      "desc": "마징가z 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD31",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_223.png",
+      "desc": "이름없는 네모 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD32",
+      "region": "G",
+      "url": "/mobs/DOKKEBI_224.png",
+      "desc": "팬 정크아트",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "GD33",
+      "region": "G",
+      "url": "",
+      "desc": "송창호 기념비",
+      "group": "타워",
+      "size": "중",
+      "type": "기념비"
+    },
+    {
+      "id": "HD1",
+      "region": "H",
+      "url": "/mobs/DOKKEBI_225.png",
+      "desc": "흑정승",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "HD2",
+      "region": "H",
+      "url": "/mobs/DOKKEBI_226.png",
+      "desc": "보라 눈 멋쟁이",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "HD3",
+      "region": "H",
+      "url": "/mobs/DOKKEBI_227.png",
+      "desc": "선글라스 멋쟁이",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "HD4",
+      "region": "H",
+      "url": "/mobs/DOKKEBI_228.png",
+      "desc": "으시시 문지기",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "HD5",
+      "region": "H",
+      "url": "/mobs/DOKKEBI_229.png",
+      "desc": "기하학",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물/의자"
+    },
+    {
+      "id": "HD6",
+      "region": "H",
+      "url": "/mobs/DOKKEBI_230.png",
+      "desc": "달팽이 형제",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물/의자"
+    },
+    {
+      "id": "HD7",
+      "region": "H",
+      "url": "/mobs/DOKKEBI_231.png",
+      "desc": "파란 원",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물/의자"
+    },
+    {
+      "id": "HD8",
+      "region": "H",
+      "url": "/mobs/DOKKEBI_232.png",
+      "desc": "하트",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "HD9",
+      "region": "H",
+      "url": "/mobs/DOKKEBI_233.png",
+      "desc": "사라진 멋쟁이 문지기",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "HD10",
+      "region": "H",
+      "url": "/mobs/DOKKEBI_234.png",
+      "desc": "사라진 멋쟁이 문지기",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "ID1",
+      "region": "I",
+      "url": "/mobs/DOKKEBI_235.png",
+      "desc": "손가락 나무",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ID2",
+      "region": "I",
+      "url": "/mobs/DOKKEBI_236.png",
+      "desc": "말이없는 성",
+      "group": "캐슬",
+      "size": "대",
+      "type": "건물"
+    },
+    {
+      "id": "ID3",
+      "region": "I",
+      "url": "/mobs/DOKKEBI_237.png",
+      "desc": "남자 화장실 지키미",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ID4",
+      "region": "I",
+      "url": "/mobs/DOKKEBI_238.png",
+      "desc": "여자 화장실 지키미",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ID5",
+      "region": "I",
+      "url": "/mobs/DOKKEBI_239.png",
+      "desc": "여자 화장실 지키미",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ID6",
+      "region": "I",
+      "url": "/mobs/DOKKEBI_240.png",
+      "desc": "소",
+      "group": "동물",
+      "size": "h3.2 w3 d1.3 중",
+      "type": "조형물"
+    },
+    {
+      "id": "ID7",
+      "region": "I",
+      "url": "/mobs/DOKKEBI_241.png",
+      "desc": "서커스 오리",
+      "group": "동물",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "ID8",
+      "region": "I",
+      "url": "/mobs/DOKKEBI_242.png",
+      "desc": "기린 두마리",
+      "group": "동물",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "ID9",
+      "region": "I",
+      "url": "/mobs/DOKKEBI_243.png",
+      "desc": "도깨비공원의 시초",
+      "group": "귀신",
+      "size": "h5.5 d0.14 w20 대",
+      "type": "조형물/건물"
+    },
+    {
+      "id": "ID10",
+      "region": "I",
+      "url": "/mobs/DOKKEBI_244.png",
+      "desc": "둥근 자석",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "ID11",
+      "region": "I",
+      "url": "/mobs/DOKKEBI_245.png",
+      "desc": "네마리 멋쟁이",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "JD1",
+      "region": "J",
+      "url": "/mobs/DOKKEBI_246.png",
+      "desc": "신비스러운 존재",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "JD2",
+      "region": "J",
+      "url": "/mobs/DOKKEBI_247.png",
+      "desc": "가장 무서운 장소",
+      "group": "캐슬",
+      "size": "대",
+      "type": "건물"
+    },
+    {
+      "id": "JD3",
+      "region": "J",
+      "url": "/mobs/DOKKEBI_248.png",
+      "desc": "으시시 기둥",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD1",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_249.png",
+      "desc": "초록 성",
+      "group": "타워",
+      "size": "대",
+      "type": "건물"
+    },
+    {
+      "id": "KD2",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_250.png",
+      "desc": "으시시 옆문",
+      "group": "몬스터",
+      "size": "중",
+      "type": "건물"
+    },
+    {
+      "id": "KD3",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_251.png",
+      "desc": "으시시 옆문 지키미",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "KD4",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_252.png",
+      "desc": "으시시 옆문 지키미",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "KD5",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_253.png",
+      "desc": "으시시 옆문 지키미",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "KD6",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_254.png",
+      "desc": "닌자 숭이",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD7",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_255.png",
+      "desc": "얼굴 숭이",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD8",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_256.png",
+      "desc": "복면 숭이",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD9",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_257.png",
+      "desc": "동그라미",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD10",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_258.png",
+      "desc": "엄마와 딸",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD11",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_259.png",
+      "desc": "파란 넥타이 신사",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD12",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_260.png",
+      "desc": "빨간 주근깨",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD13",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_261.png",
+      "desc": "노란 박쥐",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD14",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_262.png",
+      "desc": "털복숭이 세 가족",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD15",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_263.png",
+      "desc": "서프라이즈 털복숭이",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD16",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_264.png",
+      "desc": "빨간 얼굴 숭이",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD17",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_265.png",
+      "desc": "빨간 얼굴 숭이",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD18",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_266.png",
+      "desc": "뾰족 고슴도치",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물/의자"
+    },
+    {
+      "id": "KD19",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_267.png",
+      "desc": "탈춤 숭이",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "KD20",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_268.png",
+      "desc": "윙크 숭이",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD21",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_269.png",
+      "desc": "털복숭이",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "KD22",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_270.png",
+      "desc": "앉은뱅이 숭이",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "KD23",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_271.png",
+      "desc": "아빠랑 아들 숭이",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물/의자"
+    },
+    {
+      "id": "KD24",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_272.png",
+      "desc": "털복숭이 세 가족",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD25",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_273.png",
+      "desc": "털복숭이 네 가족",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD26",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_274.png",
+      "desc": "햇님 숭이 세 가족",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD27",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_275.png",
+      "desc": "얼굴 빼꼼 숭이 세 가족",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD28",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_276.png",
+      "desc": "형제 털복숭이",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD29",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_277.png",
+      "desc": "커플 털복숭이",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물/의자"
+    },
+    {
+      "id": "KD30",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_278.png",
+      "desc": "털복숭이 종족의 마른 말",
+      "group": "동물",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD31",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_279.png",
+      "desc": "꼬부랑 정승",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD32",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_280.png",
+      "desc": "아기 털복숭이",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "KD33",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_281.png",
+      "desc": "분홍 가위 ",
+      "group": "물건",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD34",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_282.png",
+      "desc": "노란 전구 가위",
+      "group": "물건",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD35",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_283.png",
+      "desc": "파랑 가위",
+      "group": "물건",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD36",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_284.png",
+      "desc": "붉은 가위",
+      "group": "물건",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD37",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_285.png",
+      "desc": "초록 가위",
+      "group": "물건",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "KD38",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_286.png",
+      "desc": "주황 말",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "KD39",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_287.png",
+      "desc": "노랑 말",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "KD40",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_288.png",
+      "desc": "서있는 노랑 말",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "KD41",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_289.png",
+      "desc": "서있는 분홍 말",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "KD42",
+      "region": "K",
+      "url": "/mobs/DOKKEBI_290.png",
+      "desc": "누워있는 초록 말",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "LD1",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_291.png",
+      "desc": "말이 넘어진 오백장군",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "LD2",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_292.png",
+      "desc": "앞발을 든 말을 탄 오백장군",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "LD3",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_293.png",
+      "desc": "말을 탄 오백장군",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "LD4",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_294.png",
+      "desc": "말을타고 내달리는 오백장군",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "LD5",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_295.png",
+      "desc": "칼을 든 오백장군",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "LD6",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_296.png",
+      "desc": "서있는 오백장군",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "LD7",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_297.png",
+      "desc": "산 무더기",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "LD8",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_298.png",
+      "desc": "말을 탄 오백장군",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "LD9",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_299.png",
+      "desc": "산무더기",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "LD10",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_300.png",
+      "desc": "부러진 창을 들고 서있는 오백장군",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "LD11",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_301.png",
+      "desc": "말을 탄 오백장군",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "LD12",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_302.png",
+      "desc": "몽둥이를 들고 서있는 오백장군",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "LD13",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_303.png",
+      "desc": "말 머리가 반대로 있는 오백장군",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "LD14",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_304.png",
+      "desc": "서있는 오백장군 ",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "LD15",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_305.png",
+      "desc": "서있는 오백장군 ",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "LD16",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_306.png",
+      "desc": "서있는 오백장군 ",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "LD17",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_307.png",
+      "desc": "서있는 오백장군 ",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "LD18",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_308.png",
+      "desc": "서있는 오백장군 ",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "LD19",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_309.png",
+      "desc": "말을 탄 오백장군",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "LD20",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_310.png",
+      "desc": "디자인 기호 탑",
+      "group": "타워",
+      "size": "대",
+      "type": "조형물/탑"
+    },
+    {
+      "id": "LD21",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_311.png",
+      "desc": "쌍혹 개집",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "LD22",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_312.png",
+      "desc": "깨비연못 팻말",
+      "group": "귀신",
+      "size": "중",
+      "type": "표지판"
+    },
+    {
+      "id": "LD23",
+      "region": "L",
+      "url": "/mobs/DOKKEBI_313.png",
+      "desc": "이름없는 팻말",
+      "group": "귀신",
+      "size": "중",
+      "type": "표지판"
+    },
+    {
+      "id": "MD1",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_314.png",
+      "desc": "뽀숑의 남자친구",
+      "group": "몬스터",
+      "size": "H4 w3.5 d2 대",
+      "type": "조형물/건물"
+    },
+    {
+      "id": "MD2",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_315.png",
+      "desc": "별",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD3",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_316.png",
+      "desc": "흰 병정",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD4",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_317.png",
+      "desc": "무표정 노란 병정",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD5",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_318.png",
+      "desc": "스마일 노란 병정",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD6",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_319.png",
+      "desc": "인상쓰는 노란 병정",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD7",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_320.png",
+      "desc": "하얀 돼지 개구리",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD8",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_321.png",
+      "desc": "초록 돼지 개구리",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD9",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_322.png",
+      "desc": "등이 부서진 돼지",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD10",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_323.png",
+      "desc": "뽀뽀하는 핑크 동그라미",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD11",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_324.png",
+      "desc": "뽀뽀하는 파란 동그라미",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD12",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_325.png",
+      "desc": "머리에 풀이 자란 너구리",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD13",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_326.png",
+      "desc": "풀을 품은 동자승",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD14",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_327.png",
+      "desc": "동자승 듀오",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD15",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_328.png",
+      "desc": "눈튀어나온 동그라미",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD16",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_329.png",
+      "desc": "키가작은 동그라미",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD17",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_330.png",
+      "desc": "나무를 품은 동그라미",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD18",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_331.png",
+      "desc": "악어와 악어 새",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD19",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_332.png",
+      "desc": "해마",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD20",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_333.png",
+      "desc": "삼각 뿔",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD21",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_334.png",
+      "desc": "각진 개구리",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD22",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_335.png",
+      "desc": "팔벌린 망원경",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD23",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_336.png",
+      "desc": "망원경을 든 망원경",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD24",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_337.png",
+      "desc": "옥색 개구리",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD25",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_338.png",
+      "desc": "회색 개구리",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD26",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_339.png",
+      "desc": "노란 개구리",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD27",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_340.png",
+      "desc": "키 작은 노란 개구리",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD28",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_341.png",
+      "desc": "손 달린 개구리",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD29",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_342.png",
+      "desc": "여자 망원경",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD30",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_343.png",
+      "desc": "남자 망원경",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD31",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_344.png",
+      "desc": "노란 사자탈",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD32",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_345.png",
+      "desc": "분홍 사자탈",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD33",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_346.png",
+      "desc": "별 달린 사자탈",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD34",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_347.png",
+      "desc": "꽃 달린 사자탈",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD35",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_348.png",
+      "desc": "사자탈 다섯 가족",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD36",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_349.png",
+      "desc": "악어 사자탈",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD37",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_350.png",
+      "desc": "작은 신선",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD38",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_351.png",
+      "desc": "미니 사자탈",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD39",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_352.png",
+      "desc": "미니 사자탈",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD40",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_353.png",
+      "desc": "곱슬 사자탈",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD41",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_354.png",
+      "desc": "돼지 코 사자탈",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD42",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_355.png",
+      "desc": "인상 쓴 병정",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD43",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_356.png",
+      "desc": "호기심 병정",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD44",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_357.png",
+      "desc": "딸기 색 병정",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD45",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_358.png",
+      "desc": "인상 쓴 별",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD46",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_359.png",
+      "desc": "풀로 뒤덮인 병정",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD47",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_360.png",
+      "desc": "인상 쓴 병정",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD48",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_361.png",
+      "desc": "지루한 병정",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD49",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_362.png",
+      "desc": "지루한 병정 졸개",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD50",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_363.png",
+      "desc": "노란 벽돌",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD51",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_364.png",
+      "desc": "하얀 벽돌",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD52",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_365.png",
+      "desc": "윙크 병정",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD53",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_366.png",
+      "desc": "흉터 병정",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "MD54",
+      "region": "M",
+      "url": "/mobs/DOKKEBI_367.png",
+      "desc": "낮잠 병정",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND1",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_368.png",
+      "desc": "깨숑의 여자친구",
+      "group": "몬스터",
+      "size": "H3.9 d2 w3 대",
+      "type": "조형물/건물"
+    },
+    {
+      "id": "ND2",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_369.png",
+      "desc": "노란 시조새",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND3",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_370.png",
+      "desc": "노란 별",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND4",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_371.png",
+      "desc": "심슨",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND5",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_372.png",
+      "desc": "-5.별턱깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND6",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_373.png",
+      "desc": "-6.뾰족머리깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND7",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_374.png",
+      "desc": "-7.네모 얼굴 깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND8",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_375.png",
+      "desc": "-8.턱수염 상남자깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND9",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_376.png",
+      "desc": "-9.얼굴이 눈인 막대깨비",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND10",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_377.png",
+      "desc": "-10.프로펠러 깨비",
+      "group": "물건",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND11",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_378.png",
+      "desc": "-11.코가 큰 아기 신선",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND12",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_379.png",
+      "desc": "프랑켄슈타인 깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND13",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_380.png",
+      "desc": "-13.조그마한 형제",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND14",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_381.png",
+      "desc": "-14.고개가 꺾어진 에일리언 깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND15",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_382.png",
+      "desc": "-15.단가라 티를 입은 악어깨비",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND16",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_383.png",
+      "desc": "-16.왕뿔 왕눈 깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND17",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_384.png",
+      "desc": "알깨비",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND18",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_385.png",
+      "desc": "-18.폐품 사남매",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND19",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_386.png",
+      "desc": "-19.파란 공룡깨비",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND20",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_387.png",
+      "desc": "-20.별을 이마에 단 여동생을 둔 남매",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND21",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_388.png",
+      "desc": "-21.눈이 망원경인 파란 엉거주춤 깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND22",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_389.png",
+      "desc": "-22.꽃깨비",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND23",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_390.png",
+      "desc": "-23.반반깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND24",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_391.png",
+      "desc": "-24.털썩 누운 깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND25",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_392.png",
+      "desc": "-25.삼각얼굴깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND26",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_393.png",
+      "desc": "-26.작은로봇깨비 ",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND27",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_394.png",
+      "desc": "-27.작은사자곤충깨비여자(분홍)",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND28",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_395.png",
+      "desc": "-28.작은사자곤충깨비남자(노랑)",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND29",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_396.png",
+      "desc": "-29.부엉깨비",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND30",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_397.png",
+      "desc": "-30.어깨에 핑크가 솟아난 파란깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND31",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_398.png",
+      "desc": "-31.작은 핑크 박쥐깨비",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND32",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_399.png",
+      "desc": "-32.네모난 입의 노란깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND33",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_400.png",
+      "desc": "손이 입인 초록깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND34",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_401.png",
+      "desc": "-34.입이뾰족한 달팽깨비",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND35",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_402.png",
+      "desc": "입에 흉터가 있는 달팽깨비",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND36",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_403.png",
+      "desc": "분홍 꽃깨비",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND37",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_404.png",
+      "desc": "두더지 깨비",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND38",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_405.png",
+      "desc": "수염맨 깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND39",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_406.png",
+      "desc": "-39.얼굴이 파란 상어깨비",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND40",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_407.png",
+      "desc": "-40.옥색몸 노란얼굴 깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND41",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_408.png",
+      "desc": "복면 쓴 깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND42",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_409.png",
+      "desc": "파란 세모 귀신",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND43",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_410.png",
+      "desc": "-43.팔벌림 울먹 깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND44",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_411.png",
+      "desc": "-44.작은 소 깨비",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND45",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_412.png",
+      "desc": "빨간 짝눈 귀신",
+      "group": "귀신",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND46",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_413.png",
+      "desc": "-46.빨간 별 깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND47",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_414.png",
+      "desc": "별에서 솟아난 세를 탄 깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND48",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_415.png",
+      "desc": "-48.노랑 별 깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND49",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_416.png",
+      "desc": "-49.하얀치마깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND50",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_417.png",
+      "desc": "브로콜리 맨",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "ND51",
+      "region": "N",
+      "url": "/mobs/DOKKEBI_418.png",
+      "desc": "-51.만세한 파란 깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "OD1",
+      "region": "O",
+      "url": "/mobs/DOKKEBI_419.png",
+      "desc": "\"-1.징가숑타워(전면",
+      "group": " 후면)\"",
+      "size": "타워",
+      "type": "H8.4 w5.4 d3.4 대"
+    },
+    {
+      "id": "OD2",
+      "region": "O",
+      "url": "/mobs/DOKKEBI_420.png",
+      "desc": "-2.소원방여자깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "OD3",
+      "region": "O",
+      "url": "/mobs/DOKKEBI_421.png",
+      "desc": "-3.소원방남자깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "OD4",
+      "region": "O",
+      "url": "/mobs/DOKKEBI_423.png",
+      "desc": "-3-2.도깨비 글씨 깨비",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "OD5",
+      "region": "O",
+      "url": "/mobs/DOKKEBI_422.png",
+      "desc": "-4.이름없는 팻말",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "OD6",
+      "region": "O",
+      "url": "/mobs/DOKKEBI_424.png",
+      "desc": "-5.큰유니콘깨비",
+      "group": "동물",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "OD7",
+      "region": "O",
+      "url": "/mobs/DOKKEBI_425.png",
+      "desc": "-6.작은유니콘깨비",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "OD8",
+      "region": "O",
+      "url": "/mobs/DOKKEBI_426.png",
+      "desc": "-6-2.나무사이에있는 조그만 깨비",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "OD9",
+      "region": "O",
+      "url": "/mobs/DOKKEBI_427.png",
+      "desc": "-7.꽃사자",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "OD10",
+      "region": "O",
+      "url": "/mobs/DOKKEBI_428.png",
+      "desc": "아기 꽃사자",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "OD11",
+      "region": "O",
+      "url": "/mobs/DOKKEBI_429.png",
+      "desc": "-9.갤러리",
+      "group": "캐슬",
+      "size": "대",
+      "type": "조형물/건물"
+    },
+    {
+      "id": "OD12",
+      "region": "O",
+      "url": "/mobs/DOKKEBI_430.png",
+      "desc": "-10.초롱박 깨비",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "OD13",
+      "region": "O",
+      "url": "/mobs/DOKKEBI_431.png",
+      "desc": "얼굴 두개 쓰레기통 깨비",
+      "group": "물건",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "PD1",
+      "region": "P",
+      "url": "/mobs/DOKKEBI_432/433/434.png",
+      "desc": "-1.깨뽀(3면)",
+      "group": "몬스터",
+      "size": "대",
+      "type": "조형물/건물"
+    },
+    {
+      "id": "PD2",
+      "region": "P",
+      "url": "/mobs/DOKKEBI_435.png",
+      "desc": "-2.문지기동물",
+      "group": "동물",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "PD3",
+      "region": "P",
+      "url": "/mobs/DOKKEBI_436.png",
+      "desc": "-3.문지기동물 우측",
+      "group": "동물",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "PD4",
+      "region": "P",
+      "url": "",
+      "desc": "-4.빨간햇님파란햇님듀오",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD4-1",
+      "region": "P",
+      "url": "",
+      "desc": "빨간햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD4-2",
+      "region": "P",
+      "url": "",
+      "desc": "파란햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD5",
+      "region": "P",
+      "url": "",
+      "desc": "-5.초록햇님 빛바랜 핑크햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD5-1",
+      "region": "P",
+      "url": "",
+      "desc": "초록햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD5-2",
+      "region": "P",
+      "url": "",
+      "desc": "빛바랜 핑크햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD6",
+      "region": "P",
+      "url": "",
+      "desc": "-6.하늘색햇님이 대장인 삼형제",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD6-1",
+      "region": "P",
+      "url": "",
+      "desc": "하늘색햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD6-2",
+      "region": "P",
+      "url": "",
+      "desc": "노란색햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD6-3",
+      "region": "P",
+      "url": "",
+      "desc": "보라색햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD7",
+      "region": "P",
+      "url": "",
+      "desc": "-7.파란햇님 형제",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD7-1",
+      "region": "P",
+      "url": "",
+      "desc": "파란햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD7-2",
+      "region": "P",
+      "url": "",
+      "desc": "빛바랜 하늘색햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD8",
+      "region": "P",
+      "url": "",
+      "desc": "-8.하얀색햇님이 젤 앞에있는 삼형제",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD8-1",
+      "region": "P",
+      "url": "",
+      "desc": "하얀색햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD8-2",
+      "region": "P",
+      "url": "",
+      "desc": "보라색햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD8-3",
+      "region": "P",
+      "url": "",
+      "desc": "연두색햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD9",
+      "region": "P",
+      "url": "",
+      "desc": "-9.작은 흰색 하마소",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD10",
+      "region": "P",
+      "url": "",
+      "desc": "-10.풀에 둘러싸인 하마소",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD11",
+      "region": "P",
+      "url": "",
+      "desc": "-11.주황초록햇님둘",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD11-1",
+      "region": "P",
+      "url": "",
+      "desc": "주황햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD11-2",
+      "region": "P",
+      "url": "",
+      "desc": "초록햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD12",
+      "region": "P",
+      "url": "",
+      "desc": "-12.파란팡크햇님둘",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD12-1",
+      "region": "P",
+      "url": "",
+      "desc": "파란햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD12-2",
+      "region": "P",
+      "url": "",
+      "desc": "핑크햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD13",
+      "region": "P",
+      "url": "",
+      "desc": "-13.주황하양햇님둘",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD13-1",
+      "region": "P",
+      "url": "",
+      "desc": "주황햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD13-2",
+      "region": "P",
+      "url": "",
+      "desc": "하양햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD14",
+      "region": "P",
+      "url": "",
+      "desc": "-14.노란 햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD15",
+      "region": "P",
+      "url": "",
+      "desc": "-15.하마와 미니햇님둘",
+      "group": "동물/식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD15-1",
+      "region": "P",
+      "url": "",
+      "desc": "초록하마",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD15-2",
+      "region": "P",
+      "url": "",
+      "desc": "주황미니햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD15-3",
+      "region": "P",
+      "url": "",
+      "desc": "보라미니햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD16",
+      "region": "P",
+      "url": "",
+      "desc": "-16.핑크주황햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD16-1",
+      "region": "P",
+      "url": "",
+      "desc": "핑크햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD16-2",
+      "region": "P",
+      "url": "",
+      "desc": "주황햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD17",
+      "region": "P",
+      "url": "",
+      "desc": "-17.주황하마와 미니햇님둘",
+      "group": "동물/식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD17-1",
+      "region": "P",
+      "url": "",
+      "desc": "주황하마",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD17-2",
+      "region": "P",
+      "url": "",
+      "desc": "파랑미니햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD17-3",
+      "region": "P",
+      "url": "",
+      "desc": "노랑미니햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD18",
+      "region": "P",
+      "url": "",
+      "desc": "-18. 햇님 오형제 ",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD18-1",
+      "region": "P",
+      "url": "",
+      "desc": "파랑햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD18-2",
+      "region": "P",
+      "url": "",
+      "desc": "빛바랜 연두햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD18-3",
+      "region": "P",
+      "url": "",
+      "desc": "빛바랜 핑크햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD18-4",
+      "region": "P",
+      "url": "",
+      "desc": "하양햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD18-5",
+      "region": "P",
+      "url": "",
+      "desc": "빛바랜 하늘색햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD19",
+      "region": "P",
+      "url": "",
+      "desc": "-19. 하마넷 햇님둘",
+      "group": "동물/식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD19-1",
+      "region": "P",
+      "url": "",
+      "desc": "하늘색하마",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD19-2",
+      "region": "P",
+      "url": "",
+      "desc": "빨간하마",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD19-3",
+      "region": "P",
+      "url": "",
+      "desc": "노란하마",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD19-4",
+      "region": "P",
+      "url": "",
+      "desc": "하양하마",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD19-5",
+      "region": "P",
+      "url": "",
+      "desc": "빛바랜 빨간햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD19-6",
+      "region": "P",
+      "url": "",
+      "desc": "빨간햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD20",
+      "region": "P",
+      "url": "",
+      "desc": "-20. 등에 풀 파란 아기 하마",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD21",
+      "region": "P",
+      "url": "",
+      "desc": "-21.주황하마연두하마",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD21-1",
+      "region": "P",
+      "url": "",
+      "desc": "주황하마",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD21-2",
+      "region": "P",
+      "url": "",
+      "desc": "연두하마",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD22",
+      "region": "P",
+      "url": "",
+      "desc": "-22.주황하마 햇님듀오",
+      "group": "동물/식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD22-1",
+      "region": "P",
+      "url": "",
+      "desc": "주황하마",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD22-2",
+      "region": "P",
+      "url": "",
+      "desc": "파란햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD22-3",
+      "region": "P",
+      "url": "",
+      "desc": "노란햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD23",
+      "region": "P",
+      "url": "",
+      "desc": "-23.파란하마연두하마",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD23-1",
+      "region": "P",
+      "url": "",
+      "desc": "파란하마",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD23-2",
+      "region": "P",
+      "url": "",
+      "desc": "연두하마",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD24",
+      "region": "P",
+      "url": "",
+      "desc": "-24.노란햇님하얀햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD24-1",
+      "region": "P",
+      "url": "",
+      "desc": "노란햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD24-2",
+      "region": "P",
+      "url": "",
+      "desc": "하얀햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD25",
+      "region": "P",
+      "url": "",
+      "desc": "-25.나무가려진햇님둘",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD25-1",
+      "region": "P",
+      "url": "",
+      "desc": "빨간햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD25-2",
+      "region": "P",
+      "url": "",
+      "desc": "노란햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD26",
+      "region": "P",
+      "url": "",
+      "desc": "-26.왕하마 단독",
+      "group": "동물",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "PD27",
+      "region": "P",
+      "url": "",
+      "desc": "-27.빨간하마(전면측면)",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD28",
+      "region": "P",
+      "url": "",
+      "desc": "-28.흰하마 둘",
+      "group": "동물",
+      "size": "28-1 중 28-2 소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD28-1",
+      "region": "P",
+      "url": "",
+      "desc": "흰하마",
+      "group": "동물",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "PD28-2",
+      "region": "P",
+      "url": "",
+      "desc": "흰하마",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD29",
+      "region": "P",
+      "url": "",
+      "desc": "-29.파란하마노란하마",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD29-1",
+      "region": "P",
+      "url": "",
+      "desc": "파란하마",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD29-2",
+      "region": "P",
+      "url": "",
+      "desc": "노란하마",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD30",
+      "region": "P",
+      "url": "",
+      "desc": "-30.나무에 가려진 하마 한마리",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD31",
+      "region": "P",
+      "url": "",
+      "desc": "-31.나무에 가려진 햇님 삼형제",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD31-1",
+      "region": "P",
+      "url": "",
+      "desc": "빛바랜 파랑햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD31-2",
+      "region": "P",
+      "url": "",
+      "desc": "빛바랜 연두햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD31-3",
+      "region": "P",
+      "url": "",
+      "desc": "노란햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD32",
+      "region": "P",
+      "url": "",
+      "desc": "-32.풀에 가려진 햇님 삼형제",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD32-1",
+      "region": "P",
+      "url": "",
+      "desc": "하양햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD32-2",
+      "region": "P",
+      "url": "",
+      "desc": "빨간햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD32-3",
+      "region": "P",
+      "url": "",
+      "desc": "빛바랜 초록햇님",
+      "group": "식물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD33",
+      "region": "P",
+      "url": "",
+      "desc": "Out-33.도깨비엄마",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "PD34",
+      "region": "P",
+      "url": "",
+      "desc": "-34.도깨비아기",
+      "group": "몬스터",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "PD35",
+      "region": "P",
+      "url": "",
+      "desc": "-35.도깨비아빠",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "PD36",
+      "region": "P",
+      "url": "",
+      "desc": "-36.트라이앵글 도깨비",
+      "group": "몬스터",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "QD1",
+      "region": "Q",
+      "url": "",
+      "desc": "-1.매점깨비",
+      "group": "몬스터",
+      "size": "대",
+      "type": "조형물/건물"
+    },
+    {
+      "id": "QD2",
+      "region": "Q",
+      "url": "",
+      "desc": "-2.표사자",
+      "group": "몬스터",
+      "size": "대",
+      "type": "조형물/건물"
+    },
+    {
+      "id": "RD1",
+      "region": "R",
+      "url": "",
+      "desc": "-1.파란털 사자 (좌)",
+      "group": "동물",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "RD2",
+      "region": "R",
+      "url": "",
+      "desc": "-2.파란털 사자 (우)",
+      "group": "동물",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "RD3",
+      "region": "R",
+      "url": "",
+      "desc": "-3.작은얼굴돌",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "RD4",
+      "region": "R",
+      "url": "",
+      "desc": "-4.풀자란작은얼굴돌",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "RD5",
+      "region": "R",
+      "url": "",
+      "desc": "-5.풀자란작은얼굴돌 투",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "RD6",
+      "region": "R",
+      "url": "",
+      "desc": "-6.이빨을 드러낸 하얀 뭉치 정승",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "RD7",
+      "region": "R",
+      "url": "",
+      "desc": "-7.노란 눈 뭉치 정승",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "RD8",
+      "region": "R",
+      "url": "",
+      "desc": "-8.옥색 뭉치 정승",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "RD9",
+      "region": "R",
+      "url": "",
+      "desc": "-9.흰색에 주황 머리 뭉치 정승",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "RD10",
+      "region": "R",
+      "url": "",
+      "desc": "-10.이빨이 날카로운 뭉치정승",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "RD11",
+      "region": "R",
+      "url": "",
+      "desc": "-11.빨간 뭉치정승",
+      "group": "귀신",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "RD12",
+      "region": "R",
+      "url": "",
+      "desc": "-12.네모 돌얼굴 원",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "RD13",
+      "region": "R",
+      "url": "",
+      "desc": "-13.네모 돌얼굴 투",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "RD14",
+      "region": "R",
+      "url": "",
+      "desc": "-14.네모 돌얼굴 스리",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "RD15",
+      "region": "R",
+      "url": "",
+      "desc": "-15.천지인 무대기",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "RD16",
+      "region": "R",
+      "url": "",
+      "desc": "-16.느영나영 되다만 돌대가리",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "RD17",
+      "region": "R",
+      "url": "",
+      "desc": "-17.중간이 이어진 동그라미",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "RD18",
+      "region": "R",
+      "url": "",
+      "desc": "-18.노랑 동글동그라미",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "RD19",
+      "region": "R",
+      "url": "",
+      "desc": "-19. 나무 자란 동글 동그라미",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "RD20",
+      "region": "R",
+      "url": "",
+      "desc": "-20.눈이 잇는 샌드위치 동그라미",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "RD21",
+      "region": "R",
+      "url": "",
+      "desc": "-21.하르방 두개와 꼬맹이",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "RD22",
+      "region": "R",
+      "url": "",
+      "desc": "-22.하루방 셋",
+      "group": "돌",
+      "size": "중",
+      "type": "조형물"
+    },
+    {
+      "id": "RD23",
+      "region": "R",
+      "url": "",
+      "desc": "-23.노란 나무",
+      "group": "식물",
+      "size": "소",
+      "type": "나무"
+    },
+    {
+      "id": "RD24",
+      "region": "R",
+      "url": "",
+      "desc": "-24.바닥에 누운 꽃게깨비",
+      "group": "동물",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "RD25",
+      "region": "R",
+      "url": "",
+      "desc": "-25.파란 구름",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "RD26",
+      "region": "R",
+      "url": "",
+      "desc": "-26.옥색 구름",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "RD27",
+      "region": "R",
+      "url": "",
+      "desc": "-27.쪼개진 빨간눈 노란 구름",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "RD28",
+      "region": "R",
+      "url": "",
+      "desc": "-28.파란 산",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "RD29",
+      "region": "R",
+      "url": "",
+      "desc": "-29.노란 산",
+      "group": "돌",
+      "size": "소",
+      "type": "조형물"
+    },
+    {
+      "id": "RD30",
+      "region": "R",
+      "url": "",
+      "desc": "-30.울타리 시작 얼굴혹달린 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD31",
+      "region": "R",
+      "url": "",
+      "desc": "-31.이빨혹 뾰족 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD32",
+      "region": "R",
+      "url": "",
+      "desc": "-32.옆모습깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD33",
+      "region": "R",
+      "url": "",
+      "desc": "-33.뾰족 복면 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD34",
+      "region": "R",
+      "url": "",
+      "desc": "-34.복면 길쭉 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD35",
+      "region": "R",
+      "url": "",
+      "desc": "-35.뾰족 뿔 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD36",
+      "region": "R",
+      "url": "",
+      "desc": "-36.성게 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD37",
+      "region": "R",
+      "url": "",
+      "desc": "-37.쩍벌 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD38",
+      "region": "R",
+      "url": "",
+      "desc": "-38.거꾸로디귿깨비(여기서부터 후면)",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD39",
+      "region": "R",
+      "url": "",
+      "desc": "-39.박쥐 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD40",
+      "region": "R",
+      "url": "",
+      "desc": "-40.얼굴 네개 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD41",
+      "region": "R",
+      "url": "",
+      "desc": "-41.뾰족머리카락",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD42",
+      "region": "R",
+      "url": "",
+      "desc": "-42.눈주변 주황깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD43",
+      "region": "R",
+      "url": "",
+      "desc": "-43.돌에 퐁낭 이끼 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD44",
+      "region": "R",
+      "url": "",
+      "desc": "-44.노란 복면 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD45",
+      "region": "R",
+      "url": "",
+      "desc": "-45.얼굴 두개 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD46",
+      "region": "R",
+      "url": "",
+      "desc": "-46.뾰족뾰족 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD47",
+      "region": "R",
+      "url": "",
+      "desc": "-47.역기역깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD48",
+      "region": "R",
+      "url": "",
+      "desc": "-48.새끼가 있는 콧구멍큰 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD49",
+      "region": "R",
+      "url": "",
+      "desc": "-49.오토바이탄것같은 듀오 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD50",
+      "region": "R",
+      "url": "",
+      "desc": "-50. 초록 악어깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD51",
+      "region": "R",
+      "url": "",
+      "desc": "-51. 외눈 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD52",
+      "region": "R",
+      "url": "",
+      "desc": "-52. 네모 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD53",
+      "region": "R",
+      "url": "",
+      "desc": "-53. 빈대떡 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD54",
+      "region": "R",
+      "url": "",
+      "desc": "-54. 어깨에 얼굴 불깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD55",
+      "region": "R",
+      "url": "",
+      "desc": "-55. 둥근 납짝 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD56",
+      "region": "R",
+      "url": "",
+      "desc": "-56. 빨간 고양 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD57",
+      "region": "R",
+      "url": "",
+      "desc": "-57. 파란 테두리 가위 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD58",
+      "region": "R",
+      "url": "",
+      "desc": "-58.빨강 초록 네모입 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD59",
+      "region": "R",
+      "url": "",
+      "desc": "-59.파랑초록 반반 색 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD60",
+      "region": "R",
+      "url": "",
+      "desc": "\"-60.부서진 깨비",
+      "group": "부서져서 상반신만 남은 깨비\"",
+      "size": "",
+      "type": ""
+    },
+    {
+      "id": "RD61",
+      "region": "R",
+      "url": "",
+      "desc": "-61.호랑무늬깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD62",
+      "region": "R",
+      "url": "",
+      "desc": "-62.초록 뾰족 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD63",
+      "region": "R",
+      "url": "",
+      "desc": "-63.파랑 인디언 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD64",
+      "region": "R",
+      "url": "",
+      "desc": "-64.데이빗보위 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD65",
+      "region": "R",
+      "url": "",
+      "desc": "-65.빨간 스피드 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD66",
+      "region": "R",
+      "url": "",
+      "desc": "-66.파란 기울어진 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD67",
+      "region": "R",
+      "url": "",
+      "desc": "-67.초록 잎이 자란 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD68",
+      "region": "R",
+      "url": "",
+      "desc": "-68.입구 노란 주근깨 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD69",
+      "region": "R",
+      "url": "",
+      "desc": "-69.입구 파란색 노란 작은손 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD70",
+      "region": "R",
+      "url": "",
+      "desc": "-70.기울어진 핑크 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD71",
+      "region": "R",
+      "url": "",
+      "desc": "-71.시멘트 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD72",
+      "region": "R",
+      "url": "",
+      "desc": "-72.이빨이 보이는 초록팔을 숨긴 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD73",
+      "region": "R",
+      "url": "",
+      "desc": "-73.머리카락이 연두색인 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD74",
+      "region": "R",
+      "url": "",
+      "desc": "-74.자그만 얼굴 두개 긴팔 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD75",
+      "region": "R",
+      "url": "",
+      "desc": "-75.호랑무늬 초록무늬 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD76",
+      "region": "R",
+      "url": "",
+      "desc": "-76.나무에 매달린 여동생과 숨어있는 남매깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD77",
+      "region": "R",
+      "url": "",
+      "desc": "-77.노란머리 번개 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD78",
+      "region": "R",
+      "url": "",
+      "desc": "-78.둥근 태양 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD79",
+      "region": "R",
+      "url": "",
+      "desc": "-79.기울어져서 얇은팔로 땅에 짚은 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD80",
+      "region": "R",
+      "url": "",
+      "desc": "-80.초승달을 든 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD81",
+      "region": "R",
+      "url": "",
+      "desc": "-81.테두리가 하늘색인 입벌린 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD82",
+      "region": "R",
+      "url": "",
+      "desc": "-82.얼굴 두개 흰 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD83",
+      "region": "R",
+      "url": "",
+      "desc": "-83.눈에 나무가 튀어나온 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD84",
+      "region": "R",
+      "url": "",
+      "desc": "-84.조르디 처럼 생긴 큰 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD85",
+      "region": "R",
+      "url": "",
+      "desc": "-85.날개 달린 새 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD86",
+      "region": "R",
+      "url": "",
+      "desc": "-86.대각선 기생하는 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD87",
+      "region": "R",
+      "url": "",
+      "desc": "-87.시옷시옷 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD88",
+      "region": "R",
+      "url": "",
+      "desc": "-88.뾰족머리 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD89",
+      "region": "R",
+      "url": "",
+      "desc": "-89.조그마한 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD90",
+      "region": "R",
+      "url": "",
+      "desc": "-90.옆모습 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD91",
+      "region": "R",
+      "url": "",
+      "desc": "-91.돌뒤에 꼬리가 있는 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD92",
+      "region": "R",
+      "url": "",
+      "desc": "-92.나무에 숨은 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD93",
+      "region": "R",
+      "url": "",
+      "desc": "-93.불만이 많은 친구 깨비 듀오",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD94",
+      "region": "R",
+      "url": "",
+      "desc": "-94. 꼬리가 앞에있는 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD95",
+      "region": "R",
+      "url": "",
+      "desc": "-95.퍼진별깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD96",
+      "region": "R",
+      "url": "",
+      "desc": "-96.아래 숨은 시멘트 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD97",
+      "region": "R",
+      "url": "",
+      "desc": "-97.알통자랑 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD98",
+      "region": "R",
+      "url": "",
+      "desc": "-98.반이 날아간 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "RD99",
+      "region": "R",
+      "url": "",
+      "desc": "-99. 익룡 얼굴같은 깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD1",
+      "region": "S",
+      "url": "",
+      "desc": "-1.하늘을 보는 미니깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD2",
+      "region": "S",
+      "url": "",
+      "desc": "-2.세마리 하마",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD3",
+      "region": "S",
+      "url": "",
+      "desc": "-3.돌위에 돌하르방 둘",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD4",
+      "region": "S",
+      "url": "",
+      "desc": "-4.돌위에 돌하르방 넷",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD5",
+      "region": "S",
+      "url": "",
+      "desc": "-5.춤추는 미니 느영나영",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD6",
+      "region": "S",
+      "url": "",
+      "desc": "-6.원킥 하는 미니 느영나영",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD7",
+      "region": "S",
+      "url": "",
+      "desc": "-7.돌위에 올라가 만세하는 미니 느영나영",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD8",
+      "region": "S",
+      "url": "",
+      "desc": "-8.땅에 파묻힌 미니 느영나영",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD9",
+      "region": "S",
+      "url": "",
+      "desc": "-9.돌 위에 머리를 처박고있는 돌하르방",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD10",
+      "region": "S",
+      "url": "",
+      "desc": "-10.돌 위에 미니 산 두개",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD11",
+      "region": "S",
+      "url": "",
+      "desc": "-11.돌위에서 큰돌과 제사",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD12",
+      "region": "S",
+      "url": "",
+      "desc": "-12.돌 위에 돌하르방 만세",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD13",
+      "region": "S",
+      "url": "",
+      "desc": "-13. 앉아있는 돌하르방",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD14",
+      "region": "S",
+      "url": "",
+      "desc": "-14.이끼 낀 미니 산 무리",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD15",
+      "region": "S",
+      "url": "",
+      "desc": "-15.미니 산과 돌하르방들",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD16",
+      "region": "S",
+      "url": "",
+      "desc": "-16.파란 미니 산과 등등",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD17",
+      "region": "S",
+      "url": "",
+      "desc": "-17. 돌하르방 네개",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD18",
+      "region": "S",
+      "url": "",
+      "desc": "-18. 얼굴 미니 산 원",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD19",
+      "region": "S",
+      "url": "",
+      "desc": "-19. 얼굴 미니 산 투",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "SD20",
+      "region": "S",
+      "url": "",
+      "desc": "-20. 표지판과 친구들",
+      "group": "",
+      "size": "",
+      "type": "표지판"
+    },
+    {
+      "id": "TD1",
+      "region": "T",
+      "url": "",
+      "desc": "-1.왕포크레인깨비",
+      "group": "땅크기록관",
+      "size": "h5.8 w5 d5.1",
+      "type": "조형물/건물"
+    },
+    {
+      "id": "TD2",
+      "region": "T",
+      "url": "",
+      "desc": "-2.표지판깨비",
+      "group": "",
+      "size": "",
+      "type": "표지판"
+    },
+    {
+      "id": "TD3",
+      "region": "T",
+      "url": "",
+      "desc": "-3.보라 삽깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "TD4",
+      "region": "T",
+      "url": "",
+      "desc": "-4.하늘색 삽깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "TD5",
+      "region": "T",
+      "url": "",
+      "desc": "-5.흰 삽깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "TD6",
+      "region": "T",
+      "url": "",
+      "desc": "-6.노란 삽깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "TD7",
+      "region": "T",
+      "url": "",
+      "desc": "-7.연두 삽깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "TD8",
+      "region": "T",
+      "url": "",
+      "desc": "-8.초록 삽깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "TD9",
+      "region": "T",
+      "url": "",
+      "desc": "-9.하늘 삽깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "TD10",
+      "region": "T",
+      "url": "",
+      "desc": "-10.쩍벌 연두 삽깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "TD11",
+      "region": "T",
+      "url": "",
+      "desc": "-11.얼굴 반 날아간 노랑 삽깨비",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "UD1",
+      "region": "U",
+      "url": "",
+      "desc": "-1.입술만빨간 전통도깨비얼굴",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "UD2",
+      "region": "U",
+      "url": "",
+      "desc": "-2.연두에 눈이 하얀 전통도깨비얼굴",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "UD3",
+      "region": "U",
+      "url": "",
+      "desc": "-3.눈에서 나무가 자란 빨간 전통도깨비얼굴",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "UD4",
+      "region": "U",
+      "url": "",
+      "desc": "-4.코와 입이 파란 연두 전통도깨비얼굴",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "UD5",
+      "region": "U",
+      "url": "",
+      "desc": "-5.눈에서 나무가 자란 파랑빨강 전통도깨비얼굴",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "UD6",
+      "region": "U",
+      "url": "",
+      "desc": "-6.알록달록 전통도깨비얼굴",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "UD7",
+      "region": "U",
+      "url": "",
+      "desc": "-7.돌색 전통도깨비얼굴",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "UD8",
+      "region": "U",
+      "url": "",
+      "desc": "-8.손이 달린 전통도깨비얼굴",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "UD9",
+      "region": "U",
+      "url": "",
+      "desc": "-9.몸에 노란 원이 있는 전통도깨비얼굴",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "UD10",
+      "region": "U",
+      "url": "",
+      "desc": "-10. 돌두개 위에 시빨간 전통도깨비얼굴",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "UD11",
+      "region": "U",
+      "url": "",
+      "desc": "-11. 눈이 빨간 전통도깨비얼굴",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "UD12",
+      "region": "U",
+      "url": "",
+      "desc": "-12. 전통도깨비얼굴 두개",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    },
+    {
+      "id": "UD13",
+      "region": "U",
+      "url": "",
+      "desc": "-13.빨강 돌색 전통도깨비얼굴",
+      "group": "",
+      "size": "",
+      "type": "조형물"
+    }
+  ]
+}

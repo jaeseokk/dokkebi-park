@@ -13,6 +13,7 @@ import {StageSizeContext, StageSizeProvider, useStageSize} from '@src/StageSizeP
 import Bang, {BangRef} from '@src/Bang'
 import Boundaries from '@src/Boundaries'
 import BoundaryExceptions from '@src/BoundaryExceptions'
+import VideoTrigger from '@src/VideoTrigger'
 
 export interface AppRef {
   playBang: () => void
@@ -118,6 +119,7 @@ const Park = ({isPlaying, playSound, onSelectMob}: ParkProps) => {
         </Container>
         <Boundaries />
         <BoundaryExceptions />
+        <VideoTrigger />
         <Player isPlaying={isPlaying} />
         <Mobs onSelectMob={onSelectMob} />
       </Container>

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import {useSpritesheet} from './useSpritesheet'
 import {useKeyControl} from './useKeyControl'
 import {useCamera} from './Camera'
@@ -9,8 +9,9 @@ import {rectangularCollision} from './utils'
 import {boundaries} from './Boundaries'
 import {boundaryExceptions} from './BoundaryExceptions'
 import {useAtom} from 'jotai'
-import {playerAtom} from './stores'
+import {playerAtom, selectedVideoIndexAtom} from './stores'
 import {useStageSize} from '@src/StageSizeProvider'
+import {videoTrigger} from '@src/VideoTrigger'
 
 export type PlayerAnimationStatus = 'idle' | 'walk' | 'run'
 export type PlayerDirection = 'up' | 'down' | 'left' | 'right'
@@ -62,12 +63,41 @@ const getNextPosition = (
   return isColliding ? null : nextPosition
 }
 
+const checkVideoTrigger = (
+  position: {x: number; y: number},
+  deltaVelocity: {x: number; y: number},
+) => {
+  let nextPosition = {
+    x: position.x + deltaVelocity.x,
+    y: position.y + deltaVelocity.y,
+  }
+
+  const collidingTrigger = videoTrigger.find((boundary) => {
+    return rectangularCollision({
+      rectangle1: {
+        position: {
+          x: nextPosition.x - PLAYER_SIZE.width / 2,
+          y: nextPosition.y - PLAYER_SIZE.height,
+        },
+        ...PLAYER_SIZE,
+      },
+      rectangle2: {
+        ...boundary,
+      },
+    })
+  })
+
+  return collidingTrigger ? collidingTrigger.videoId : undefined
+}
+
 export interface PlayerProps {
   isPlaying: boolean
 }
 
 export const Player = ({isPlaying}: PlayerProps) => {
+  const prevWatchedVideoIndexRef = useRef<number>()
   const size = useStageSize()
+  const [selectedVideoIndex, setSelectedVideoIndex] = useAtom(selectedVideoIndexAtom)
   const downSprites = useSpritesheet({
     spritesheetUrl: '/playerDown.png',
     frameWidth: 48,
@@ -150,6 +180,15 @@ export const Player = ({isPlaying}: PlayerProps) => {
     }
 
     const nextPosition = getNextPosition(player.position, deltaVelocity)
+
+    const check = checkVideoTrigger(player.position, deltaVelocity)
+
+    if (prevWatchedVideoIndexRef.current === undefined && check !== undefined) {
+      prevWatchedVideoIndexRef.current = check - 1
+      setSelectedVideoIndex(check - 1)
+    } else if (check === undefined) {
+      prevWatchedVideoIndexRef.current = undefined
+    }
 
     if (nextPosition) {
       setPlayer((prev) => ({

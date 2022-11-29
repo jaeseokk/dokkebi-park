@@ -1,4 +1,4 @@
-import React, {useEffect, useMemo, useState} from 'react'
+import React from 'react'
 import Link from 'next/link'
 import NavButton from '@src/NavButton'
 import Image from 'next/image'
@@ -7,7 +7,6 @@ import NavPage from '@src/NavPage'
 import About from '@src/About'
 import {useRouter} from 'next/router'
 import ArchiveDetail from '@src/ArchiveDetail'
-import {useKey} from 'react-use'
 import Archive from '@src/Archive'
 import {motion} from 'framer-motion'
 

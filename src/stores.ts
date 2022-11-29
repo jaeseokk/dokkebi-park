@@ -26,3 +26,5 @@ export const helperDataAtom = atom<HelperData>({
 })
 
 export const mobsConfigAtom = atomWithStorage<MobConfig[]>('mobsConfig', [])
+
+export const selectedVideoIndexAtom = atom<number | undefined>(undefined)
