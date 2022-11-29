@@ -1,10 +1,10 @@
-import React from 'react'
+import React, {forwardRef} from 'react'
 
 export interface NavButtonProps extends React.ComponentPropsWithoutRef<'a'> {
   children: string
 }
 
-const NavButton = ({children, ...rest}: NavButtonProps) => {
+const NavButton = forwardRef<HTMLAnchorElement, NavButtonProps>(({children, ...rest}) => {
   return (
     <a className="group" {...rest}>
       {children.split('').map((char, charIndex) => (
@@ -17,6 +17,8 @@ const NavButton = ({children, ...rest}: NavButtonProps) => {
       ))}
     </a>
   )
-}
+})
 
 export default NavButton
+
+NavButton.displayName = 'NavButton'

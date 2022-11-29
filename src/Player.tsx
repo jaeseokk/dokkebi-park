@@ -24,9 +24,6 @@ const getNextPosition = (
   position: {x: number; y: number},
   deltaVelocity: {x: number; y: number},
 ) => {
-  if (!deltaVelocity.x && !deltaVelocity.y) {
-    return null
-  }
   let nextPosition = {
     x: position.x + deltaVelocity.x,
     y: position.y + deltaVelocity.y,
@@ -184,7 +181,7 @@ export const Player = ({}: PlayerProps) => {
       <Sprite
         texture={currentSprite}
         anchor={[0.5, 1]}
-        scale={1}
+        scale={1.1}
         x={player.position.x - size.width / 2}
         y={player.position.y - size.height / 2}
         zIndex={2}
