@@ -1,23 +1,19 @@
-import React, {useEffect, useState} from 'react'
+import React, {forwardRef, useEffect, useImperativeHandle, useRef} from 'react'
 import {Container, Sprite, Stage, useApp} from '@inlet/react-pixi'
-import Camera, {useCamera} from './Camera'
+import Camera from './Camera'
 import Player from './Player'
 import {OFFSET} from './constants'
 import * as PIXI from 'pixi.js'
 import ResourceLoader from './ResourceLoader'
 import Mobs from './Mobs'
-import MobsHelper, {HelperData} from './MobsHelper'
-import produce from 'immer'
-import {useAtom} from 'jotai'
-import {mobsConfigAtom} from './stores'
-import {useUpdateHelperData} from './useUpdateHelperData'
-import BackgroundSound, {useBackgroundSound} from './BackgroundSound'
+import {HelperData} from './MobsHelper'
+import BackgroundSoundProvider, {useBackgroundSound} from './BackgroundSoundProvider'
 import {useContextBridge} from '@src/useContextBridge'
 import {StageSizeContext, StageSizeProvider, useStageSize} from '@src/StageSizeProvider'
+import Bang, {BangRef} from '@src/Bang'
 
-export interface AppProps {
-  onSelectMob: (mobIndex: number) => void
-  onMoveFirstArchiveDetail: () => void
+export interface AppRef {
+  playBang: () => void
 }
 
 const RESOURCES = [
@@ -30,77 +26,69 @@ const RESOURCES = [
   '/mob-sprites-0.png',
   '/mob-sprites-1.png',
   '/mob-sprites-2.png',
+  '/bang1.png',
+  '/bang2.png',
+  '/bang3.png',
+  '/bang4.png',
+  '/bang5.png',
+  '/bang6.png',
+  '/bang7.png',
+  '/bang8.png',
+  '/bang9.png',
+  '/bang10.png',
+  '/bang11.png',
+  '/bang12.png',
+  '/bang13.png',
+  '/bang14.png',
 ]
 
-const App = ({onSelectMob, onMoveFirstArchiveDetail}: AppProps) => {
+export interface AppProps {
+  forwardedRef: React.Ref<AppRef>
+  onSelectMob: (mobIndex: number) => void
+}
+
+const App = ({onSelectMob, forwardedRef}: AppProps) => {
+  const bangRef = useRef<BangRef>(null)
+
+  useImperativeHandle(
+    forwardedRef,
+    () => {
+      return {
+        playBang: async () => {
+          return bangRef.current?.play()
+        },
+      }
+    },
+    [],
+  )
+
   return (
     <StageSizeProvider>
       <ResourceLoader resources={RESOURCES} fallback={<div>Loading...</div>}>
-        <StateContainer
-          onSelectMob={onSelectMob}
-          onMoveFirstArchiveDetail={onMoveFirstArchiveDetail}
-        />
+        <StateContainer>
+          <Park onSelectMob={onSelectMob} />
+          <Bang zIndex={10} ref={bangRef} />
+        </StateContainer>
       </ResourceLoader>
     </StageSizeProvider>
   )
 }
 
 interface StateContainerProps {
-  onSelectMob: (mobIndex: number) => void
-  onMoveFirstArchiveDetail: () => void
+  children: React.ReactNode
 }
 
-const StateContainer = ({onSelectMob, onMoveFirstArchiveDetail}: StateContainerProps) => {
+const StateContainer = ({children}: StateContainerProps) => {
   const size = useStageSize()
-  const [helperData] = useUpdateHelperData()
-  const [cursorPosition, setCursorPosition] = useState<{x: number; y: number}>()
-  const [mobsConfig, setMobsConfig] = useAtom(mobsConfigAtom)
   const StageSizeContextBridge = useContextBridge(StageSizeContext)
 
   return (
     <>
       <Stage {...size} options={{backgroundColor: 0x005ed0}}>
         <StageSizeContextBridge>
-          <BackgroundSound>
-            <Camera>
-              <Park
-                onSelectMob={onSelectMob}
-                helperData={helperData}
-                cursorPosition={cursorPosition}
-                onChangeCursorPosition={({x, y}) => {
-                  setCursorPosition({x, y})
-                }}
-                onClick={() => {
-                  const x = cursorPosition
-                    ? Math.round(cursorPosition.x + size.width / 2 + OFFSET.x)
-                    : 0
-                  const y = cursorPosition
-                    ? Math.round(cursorPosition.y + size.height / 2 + OFFSET.y)
-                    : 0
-
-                  setMobsConfig(
-                    produce(mobsConfig, (draft) => {
-                      draft[helperData.index] = {
-                        position: {x, y},
-                        scale: helperData.scale,
-                      }
-                    }),
-                  )
-                }}
-              />
-            </Camera>
-          </BackgroundSound>
+          <BackgroundSoundProvider>{children}</BackgroundSoundProvider>
         </StageSizeContextBridge>
       </Stage>
-      <button
-        className="absolute left-6 bottom-6 h-[9.375rem] w-[9.375rem] bg-[url('/club.png')] bg-cover bg-center transition-transform hover:scale-110"
-        onClick={onMoveFirstArchiveDetail}
-      >
-        <span className="opacity-0">!</span>
-      </button>
-      <button className="absolute right-6 bottom-6 h-[9.375rem] w-[9.375rem] bg-[url('/dict.png')] bg-cover bg-center transition-transform hover:scale-110">
-        <span className="opacity-0">!</span>
-      </button>
       {/*<MobsHelper cursorPosition={cursorPosition} />*/}
     </>
   )
@@ -111,19 +99,32 @@ interface ParkProps {
   helperData?: HelperData
   cursorPosition?: {x: number; y: number}
   onChangeCursorPosition?: ({x, y}: {x: number; y: number}) => void
-  onClick?: () => void
 }
 
-const Park = ({
-  onSelectMob,
-  helperData,
-  cursorPosition,
-  onChangeCursorPosition,
-  onClick,
-}: ParkProps) => {
+const Park = ({onSelectMob}: ParkProps) => {
   const app = useApp()
   const size = useStageSize()
-  const {getViewport} = useCamera()
+
+  app.renderer.plugins.interaction.moveWhenInside = true
+
+  return (
+    <Camera>
+      <Container sortableChildren interactive>
+        <Container position={[-size.width / 2 - OFFSET.x, -size.height / 2 - OFFSET.y]} zIndex={0}>
+          <Map />
+        </Container>
+        {/*<Boundaries />*/}
+        {/*<BoundaryExceptions />*/}
+        <Player />
+        <Mobs onSelectMob={onSelectMob} />
+      </Container>
+    </Camera>
+  )
+}
+
+interface MapProps {}
+
+const Map = ({}: MapProps) => {
   const {play, stop} = useBackgroundSound()
 
   useEffect(() => {
@@ -133,46 +134,6 @@ const Park = ({
     }
   }, [])
 
-  app.renderer.plugins.interaction.moveWhenInside = true
-
-  return (
-    <>
-      <Container
-        sortableChildren
-        interactive
-        pointermove={(e) => {
-          const viewport = getViewport()
-          const position = viewport?.toWorld(e.data.global)
-
-          if (!position) {
-            return
-          }
-
-          onChangeCursorPosition?.({
-            x: position.x,
-            y: position.y,
-          })
-        }}
-        pointerdown={onClick}
-      >
-        <Container position={[-size.width / 2 - OFFSET.x, -size.height / 2 - OFFSET.y]} zIndex={0}>
-          <Map />
-        </Container>
-        {/*<Boundaries />*/}
-        {/*<BoundaryExceptions />*/}
-        <Player />
-        <Mobs onSelectMob={onSelectMob} />
-        {/*{helperData && cursorPosition && (*/}
-        {/*  <MobPositionTestCursor position={cursorPosition} helperData={helperData} />*/}
-        {/*)}*/}
-      </Container>
-    </>
-  )
-}
-
-interface MapProps {}
-
-const Map = ({}: MapProps) => {
   const texture = PIXI.utils.TextureCache['/map.png']
   // const texture = PIXI.utils.TextureCache['/map_with_mobs_info.png']
   return <Sprite texture={texture} anchor={0} />

@@ -2,11 +2,11 @@ import React, {useEffect, useRef, useState} from 'react'
 import {Sound, sound} from '@pixi/sound'
 import {useMounted} from './useMounted'
 
-export interface BackgroundSoundProps {
+export interface BackgroundSoundProviderProps {
   children: React.ReactNode
 }
 
-const BackgroundSound = ({children}: BackgroundSoundProps) => {
+const BackgroundSoundProvider = ({children}: BackgroundSoundProviderProps) => {
   useEffect(() => {
     const instance = sound.add('background', {
       url: '/background_sound.mp3',
@@ -56,4 +56,4 @@ export const useBackgroundSound = () => {
   return context
 }
 
-export default BackgroundSound
+export default BackgroundSoundProvider
