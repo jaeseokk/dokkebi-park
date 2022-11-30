@@ -28,7 +28,7 @@ const ArchiveItem = ({title, desc, images, colorIndex}: ArchiveItemProps) => {
           </li>
         ))}
       </ul>
-      <p className="mt-12 whitespace-pre-line">{desc}</p>
+      {/*<p className="mt-12 whitespace-pre-line">{desc}</p>*/}
     </div>
   )
 }

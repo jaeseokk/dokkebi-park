@@ -16,6 +16,7 @@ const VideoFrame = ({url, onEnded}: VideoFrameProps) => {
 
   return (
     <motion.div
+      className="pointer-events-none fixed left-0 bottom-0 right-0 top-0 z-50 pt-[56.25%]"
       initial={{clipPath: 'circle(0px)'}}
       animate={{
         clipPath: `circle(${height + 200}px)`,
@@ -24,8 +25,13 @@ const VideoFrame = ({url, onEnded}: VideoFrameProps) => {
           stiffness: 20,
         },
       }}
-      className="pointer-events-none fixed left-0 bottom-0 right-0 top-0 z-50 pt-[56.25%]"
     >
+      <button
+        className="pointer-events-auto absolute top-4 right-8 z-[1] flex items-center justify-center text-6xl opacity-30 hover:opacity-100"
+        onClick={onEnded}
+      >
+        &times;
+      </button>
       <ReactPlayer
         className="absolute top-0 left-0"
         url={url}

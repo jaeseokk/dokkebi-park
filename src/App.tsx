@@ -117,9 +117,9 @@ const Park = ({isPlaying, playSound, onSelectMob}: ParkProps) => {
         <Container position={[-size.width / 2 - OFFSET.x, -size.height / 2 - OFFSET.y]} zIndex={0}>
           <Map playSound={playSound} />
         </Container>
-        <Boundaries />
-        <BoundaryExceptions />
-        <VideoTrigger />
+        {/*<Boundaries />*/}
+        {/*<BoundaryExceptions />*/}
+        {/*<VideoTrigger />*/}
         <Player isPlaying={isPlaying} />
         <Mobs onSelectMob={onSelectMob} />
       </Container>

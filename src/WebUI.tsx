@@ -86,7 +86,7 @@ const WebUI = ({children, isAppStarted, showHeader, showMenu, onMoveArchivePage}
                 <span className="opacity-0">!</span>
               </motion.button>
               <motion.button
-                className="absolute right-6 bottom-6 h-[9.375rem] w-[9.375rem] bg-[url('/dict.png')] bg-cover bg-center transition-transform hover:scale-110"
+                className="absolute right-6 bottom-6 h-[9.375rem] w-[9.375rem] bg-[url('/dict.png')] bg-cover bg-center grayscale transition-transform"
                 animate={showMenu ? 'show' : 'hide'}
                 variants={menuVariants}
               >

@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import aboutImg from '@public/about.png'
+import sponsorsImg from '@public/sponsors.png'
 
 export interface AboutProps {}
 
@@ -30,10 +31,16 @@ const About = ({}: AboutProps) => {
                 하였습니다.
               </p>
               <p>
-                도깨비공원을 다양한 각도에서 이해할 수 있도록 구성한 아카이브와 실재 조형공원의
-                공간을 맵의 형태로 재구성한 맵 아카이브까지, 이를 통해 사라지는 대형 공간이 웹을
-                통해 재건축되어 사람들이 공간 자체를 기억하고 지속적으로 이용할 수 있도록 하는 것이
-                이 프로젝트의 목표입니다.
+                온라인상에 재건축된 도깨비공원은 실재 조형공원의 공간을 맵의 형태로 재구성한 맵
+                아카이브와 보다 다양한 각도에서 공원의 모습을 이해할 수 있도록 만든 사진아카이브로
+                구성되어 있습니다. 맵 아카이브에는 실재하는 공원의 모습이 2D 형태의 모습으로
+                구현되었습니다. 사용자는 원하는 곳으로 이동할 수 있으며, 도깨비와 만났을 때 간단한
+                인터렉션을 경험할 수 있습니다. 각각의 구역에 숨겨져있는 애니메이션을 통해 도깨비
+                탄생 설화도 알 수 있습니다. 도깨비공원 사진아카이브는 도깨비와 그들의 탄생 과정,
+                다양한 공원의 모습을 볼 수 있는 사진 저장소입니다. 2005년부터 2022년까지
+                도깨비공원에 살고 있는 여러 도깨비의 과거, 그리고 현재의 모습을 찾아볼 수 있습니다.
+                이 두 개의 아카이브를 통해 사라지는 대형 공간이 웹을 통해 재건축되어 사람들이 공간
+                자체를 기억하고 지속적으로 이용할 수 있도록 하는 것이 이 프로젝트의 목표입니다.
               </p>
             </div>
           </section>
@@ -53,6 +60,13 @@ const About = ({}: AboutProps) => {
               <li>수민(SUMIN): 음악 감독</li>
             </ul>
           </section>
+        </div>
+        <div className="mt-[23.75rem] text-center">
+          <Image src={sponsorsImg} width={480} height={50} alt="sponsors" placeholder="blur" />
+          <p className="mt-8">
+            이 프로젝트는 문화체육관광부, 한국문화예술위원회의 온라인 미디어 예술 활동 지원 사업의
+            일환으로 진행됐습니다.
+          </p>
         </div>
       </div>
     </div>
