@@ -4,7 +4,7 @@ import {COLOR_SET, CONTENTS} from '@src/contents'
 import Link from 'next/link'
 import ArchiveItem from '@src/ArchiveItem'
 
-const COLUMN_COUNT = 2
+const COLUMN_COUNT = 3
 const GAP = 36
 
 export interface ArchiveGridProps {

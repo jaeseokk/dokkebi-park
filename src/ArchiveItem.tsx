@@ -12,17 +12,17 @@ export interface ArchiveItemProps {
 const ArchiveItem = ({title, desc, images, colorIndex}: ArchiveItemProps) => {
   return (
     <div
-      className="rounded-3xl py-[3.875rem] px-[2.375rem] text-black"
+      className="rounded-3xl py-[1.5rem] px-[1.5rem] text-black"
       style={{
         backgroundColor: COLOR_SET[colorIndex],
       }}
     >
-      <h2 className="mb-14 text-6xl underline">{title}</h2>
-      <ul className="grid grid-cols-3 gap-4">
-        {images.slice(0, 6).map(({url}, imageIndex) => (
+      <h2 className="mb-14 text-5xl underline">{title}</h2>
+      <ul className="grid grid-cols-3 gap-2">
+        {images.slice(0, 9).map(({url}, imageIndex) => (
           <li
             key={imageIndex}
-            className="relative aspect-[4/3] overflow-hidden rounded-xl bg-[#EAEAEA]"
+            className="relative aspect-[3/4] overflow-hidden rounded-xl bg-[#EAEAEA]"
           >
             <Image src={url} alt="" layout="fill" objectFit={'cover'} />
           </li>
