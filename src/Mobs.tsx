@@ -1,30 +1,36 @@
 import React, {useRef, useState} from 'react'
 import {Sprite, useTick} from '@inlet/react-pixi'
-import {MOB_CONFIG_LIST, OFFSET} from './constants'
+import {MOB_CONFIG_LIST, OFFSET, MOBS_SPRITESHEET_URLS} from './constants'
 import {useMobsSpritesheet} from './useMobsSpritesheet'
 import {useBreath} from './useBreath'
 import {useAtomValue} from 'jotai'
-import {playerAtom} from './stores'
+import {mobsConfigAtom, playerAtom} from './stores'
 import {getDistance} from './utils'
 import Cursor from './Cursor'
 import {useKey} from 'react-use'
 import {useStageSize} from '@src/StageSizeProvider'
 
 export interface MobsProps {
-  onSelectMob: (mobIndex: number) => void
+  onSelectMob: (mobId: string) => void
 }
 
 const Mobs = ({onSelectMob}: MobsProps) => {
+  // const mobsConfig = useAtomValue(mobsConfigAtom)
+  const mobConfigList = MOB_CONFIG_LIST
   const size = useStageSize()
   const sprites = useMobsSpritesheet({
-    spritesheetUrls: ['/mob-sprites-0.png', '/mob-sprites-1.png', '/mob-sprites-2.png'],
-    frameWidth: 200,
-    frameHeight: 200,
+    mobConfigList,
+    spritesheetUrls: MOBS_SPRITESHEET_URLS,
+    frameWidth: 400,
+    frameHeight: 400,
   })
   const {breathScaleFactor} = useBreath()
   const player = useAtomValue(playerAtom)
   const isMouseInteractionProcessing = useRef(false)
   const [focussedMobIndex, setFocussedMobIndex] = useState<number>()
+  const handleSelectMob = (mobIndex: number) => {
+    onSelectMob(mobConfigList[mobIndex].id)
+  }
   const handleMouseOver = (mobIndex: number) => {
     isMouseInteractionProcessing.current = true
     setFocussedMobIndex(mobIndex)
@@ -41,7 +47,7 @@ const Mobs = ({onSelectMob}: MobsProps) => {
 
     let nextFocussedIndex: number | undefined = undefined
     let minDistance: number = Infinity
-    MOB_CONFIG_LIST.forEach((mobConfig, mobIndex) => {
+    mobConfigList.forEach((mobConfig, mobIndex) => {
       const offsetAppliedPlayerPosition = {
         x: player.position.x + OFFSET.x,
         y: player.position.y + OFFSET.y,
@@ -71,7 +77,7 @@ const Mobs = ({onSelectMob}: MobsProps) => {
         return
       }
 
-      onSelectMob(focussedMobIndex)
+      handleSelectMob(focussedMobIndex)
     },
     undefined,
     [focussedMobIndex, onSelectMob],
@@ -79,11 +85,11 @@ const Mobs = ({onSelectMob}: MobsProps) => {
 
   return (
     <>
-      {MOB_CONFIG_LIST.map((mobConfig, mobIndex) => {
+      {mobConfigList.map((mobConfig, mobIndex) => {
         const textureTuple = sprites[mobIndex]
         const boundaryHeightScale =
           mobConfig.boundaryHeightScale || (mobConfig.scale && mobConfig.scale < 0.5 ? 1 : 0.5)
-        const scale = (mobConfig.scale || 1) * breathScaleFactor
+        const scale = (mobConfig.scale || 1) * breathScaleFactor * 0.5
 
         if (boundaryHeightScale < 1) {
           return (
@@ -103,7 +109,7 @@ const Mobs = ({onSelectMob}: MobsProps) => {
                 }
                 zIndex={3}
                 interactive
-                pointerdown={() => onSelectMob(mobIndex)}
+                pointerdown={() => handleSelectMob(mobIndex)}
                 pointermove={() => {
                   handleMouseOver(mobIndex)
                 }}
@@ -124,7 +130,7 @@ const Mobs = ({onSelectMob}: MobsProps) => {
                 }
                 zIndex={1}
                 interactive
-                pointerdown={() => onSelectMob(mobIndex)}
+                pointerdown={() => handleSelectMob(mobIndex)}
                 pointermove={() => {
                   handleMouseOver(mobIndex)
                 }}
@@ -151,7 +157,7 @@ const Mobs = ({onSelectMob}: MobsProps) => {
               y={mobConfig.position.y - size.height / 2 - OFFSET.y}
               zIndex={1}
               interactive
-              pointerdown={() => onSelectMob(mobIndex)}
+              pointerdown={() => handleSelectMob(mobIndex)}
               pointermove={() => {
                 handleMouseOver(mobIndex)
               }}

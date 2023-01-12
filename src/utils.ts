@@ -69,3 +69,17 @@ export function valueOrLastItem<T>(value: T | T[]) {
 //     }
 //   }
 // }
+export const range = (start: number, end: number) => {
+  const arr: number[] = []
+  const increment = start < end ? 1 : -1
+
+  if (start === end) {
+    return [start]
+  }
+
+  for (let i = start; i <= end; i += increment) {
+    arr.push(i)
+  }
+
+  return arr
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Link from 'next/link'
 import NavButton from '@src/NavButton'
 import Image from 'next/image'
@@ -9,6 +9,7 @@ import {useRouter} from 'next/router'
 import ArchiveDetail from '@src/ArchiveDetail'
 import Archive from '@src/Archive'
 import {motion} from 'framer-motion'
+import {flushSync} from 'react-dom'
 
 const menuVariants = {
   show: {
@@ -23,7 +24,7 @@ const menuVariants = {
       type: 'spring',
     },
   },
-}
+} as const
 
 export interface WebUIProps {
   children: React.ReactNode
@@ -36,10 +37,13 @@ export interface WebUIProps {
 
 const WebUI = ({children, isAppStarted, showHeader, showMenu, onMoveArchivePage}: WebUIProps) => {
   const router = useRouter()
+  const [useNavAnimation, setUseNavAnimation] = useState(false)
+  const [navPageScrollContainer, setNavPageScrollContainer] = useState<HTMLDivElement | null>(null)
 
   return (
     <div>
       <motion.header
+        initial={'hide'}
         animate={showHeader ? 'show' : 'hide'}
         className="fixed top-0 left-0 right-0 z-20 flex h-[8.25rem] flex-none items-center"
         variants={menuVariants}
@@ -79,8 +83,12 @@ const WebUI = ({children, isAppStarted, showHeader, showMenu, onMoveArchivePage}
                 className="absolute left-6 bottom-6 h-[9.375rem] w-[9.375rem] bg-[url('/club.png')] bg-cover bg-center transition-transform hover:scale-110"
                 animate={showMenu ? 'show' : 'hide'}
                 variants={menuVariants}
-                onClick={() => {
-                  onMoveArchivePage()
+                onClick={async () => {
+                  flushSync(() => {
+                    setUseNavAnimation(true)
+                  })
+                  await onMoveArchivePage()
+                  setUseNavAnimation(false)
                 }}
               >
                 <span className="opacity-0">!</span>
@@ -95,20 +103,21 @@ const WebUI = ({children, isAppStarted, showHeader, showMenu, onMoveArchivePage}
             </>
           )}
         </div>
-        <NavPage show={router.query.pageName === 'about'} openStartPosition={'left-top'}>
+        <NavPage show={router.query.pageName === 'about'}>
           <About />
         </NavPage>
         <NavPage
           show={router.query.pageName === 'archive' && router.query.archiveId === undefined}
-          openStartPosition={'right-top'}
+          useAnimation={useNavAnimation}
         >
           <Archive />
         </NavPage>
         <NavPage
           show={router.query.pageName === 'archive' && router.query.archiveId !== undefined}
-          openStartPosition={'left-bottom'}
+          useAnimation={useNavAnimation}
+          ref={setNavPageScrollContainer}
         >
-          <ArchiveDetail />
+          <ArchiveDetail scrollContainer={navPageScrollContainer} />
         </NavPage>
       </main>
     </div>

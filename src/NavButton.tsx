@@ -1,4 +1,5 @@
 import React, {forwardRef} from 'react'
+import AngledText from '@src/AngledText'
 
 export interface NavButtonProps extends React.ComponentPropsWithoutRef<'a'> {
   children: string
@@ -6,15 +7,8 @@ export interface NavButtonProps extends React.ComponentPropsWithoutRef<'a'> {
 
 const NavButton = forwardRef<HTMLAnchorElement, NavButtonProps>(({children, ...rest}, ref) => {
   return (
-    <a className="group" {...rest} ref={ref}>
-      {children.split('').map((char, charIndex) => (
-        <span
-          key={`${charIndex}_${char}`}
-          className="relative inline-block rotate-12 text-2xl transition-transform duration-100 before:absolute before:left-0 before:right-0 before:bottom-0 before:h-0.5 before:bg-white group-hover:rotate-0"
-        >
-          {char}
-        </span>
-      ))}
+    <a className="text-2xl" {...rest} ref={ref}>
+      <AngledText color={'white'}>{children}</AngledText>
     </a>
   )
 })

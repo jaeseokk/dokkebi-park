@@ -1,14 +1,16 @@
 import * as PIXI from 'pixi.js'
 import {Texture} from 'pixi.js'
-import {MOB_CONFIG_LIST} from './constants'
+import {MobConfig} from './constants'
 
 export interface UseMobsSpritesheetParam {
+  mobConfigList: MobConfig[]
   spritesheetUrls: string[]
   frameWidth: number
   frameHeight: number
 }
 
 export const useMobsSpritesheet = ({
+  mobConfigList,
   spritesheetUrls,
   frameWidth,
   frameHeight,
@@ -23,7 +25,7 @@ export const useMobsSpritesheet = ({
 
     for (let y = 0; y < height; y += frameHeight) {
       for (let x = 0; x < width; x += frameWidth) {
-        const mobConfig = MOB_CONFIG_LIST[index]
+        const mobConfig = mobConfigList[index]
 
         if (!mobConfig) {
           return

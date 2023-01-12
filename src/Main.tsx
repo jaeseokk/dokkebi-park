@@ -12,6 +12,7 @@ import {VIDEOS} from '@src/constants'
 import {AnimatePresence, motion} from 'framer-motion'
 import VideoFrame from '@src/VideoFrame'
 import MobInfoDialog from '@src/MobInfoDialog'
+import {useRouteQueryValue} from '@src/useRouterQueryValue'
 
 const App = dynamic(() => import('../src/App'), {ssr: false})
 
@@ -22,36 +23,42 @@ const Main = ({}: MainProps) => {
   const router = useRouter()
   const playerAnimationStatus = useAtomValue(playerAnimationStatusAtom)
   const isAppStarted = useAtomValue(isAppStartedAtom)
-  const [selectedMobIndex, setSelectedMobIndex] = useState<number>()
+  const [selectedMobId, setSelectedMobId] = useState<string>()
   const [selectedVideoIndex, setSelectedVideoIndex] = useAtom(selectedVideoIndexAtom)
   const isPageOpened = useMemo(() => {
     return !!router.query.pageName
   }, [router.query.pageName])
   const showMenu = isPageOpened || (playerAnimationStatus === 'idle' && !isPageOpened)
-  const showHeader = isPageOpened || !isAppStarted
   const playSound = isAppStarted && !isPageOpened && selectedVideoIndex === undefined
-  const showMobInfo = selectedMobIndex !== undefined && !isPageOpened
+  const showMobInfo = selectedMobId !== undefined && !isPageOpened
   const isPlaying =
     isAppStarted && !isPageOpened && !showMobInfo && selectedVideoIndex === undefined
+  const showHeader = (isPageOpened && isAppStarted && !isPlaying) || isPageOpened
+  const groupId = useRouteQueryValue('groupId', {asNumber: true})
+  const isArchiveGroupDialogOpen = groupId !== undefined
 
   useKey(
     'Escape',
     (e) => {
       e.preventDefault()
 
+      if (isArchiveGroupDialogOpen) {
+        return
+      }
+
       if (selectedVideoIndex !== undefined) {
         setSelectedVideoIndex(undefined)
       }
 
       if (showMobInfo) {
-        setSelectedMobIndex(undefined)
+        setSelectedMobId(undefined)
         return
       }
 
       router.push('/', undefined, {shallow: true})
     },
     undefined,
-    [showMobInfo, selectedVideoIndex],
+    [showMobInfo, selectedVideoIndex, isArchiveGroupDialogOpen],
   )
 
   return (
@@ -70,17 +77,15 @@ const Main = ({}: MainProps) => {
           <App
             isPlaying={isPlaying}
             playSound={playSound}
-            onSelectMob={(mobIndex) => {
-              setSelectedMobIndex(mobIndex)
-            }}
+            onSelectMob={setSelectedMobId}
             forwardedRef={appRef}
           />
         </Suspense>
       </WebUI>
       <MobInfoDialog
-        selectedMobIndex={selectedMobIndex}
+        selectedMobId={selectedMobId}
         onClose={() => {
-          setSelectedMobIndex(undefined)
+          setSelectedMobId(undefined)
         }}
       />
       {selectedVideoIndex !== undefined && (

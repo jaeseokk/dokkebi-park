@@ -23,6 +23,7 @@ export const helperDataAtom = atom<HelperData>({
   enabled: false,
   index: 0,
   scale: 1,
+  cursorPosition: {x: 0, y: 0},
 })
 
 export const mobsConfigAtom = atomWithStorage<MobConfig[]>('mobsConfig', [])

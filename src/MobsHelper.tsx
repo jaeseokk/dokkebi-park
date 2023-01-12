@@ -3,7 +3,7 @@ import React from 'react'
 import styles from './MobsHelper.module.scss'
 import {APP_HEIGHT, APP_WIDTH, OFFSET} from './constants'
 import {useAtom} from 'jotai'
-import {mobsConfigAtom} from './stores'
+import {helperDataAtom, mobsConfigAtom} from './stores'
 import produce from 'immer'
 import {createPortal} from 'react-dom'
 import {useUpdateHelperData} from './useUpdateHelperData'
@@ -12,18 +12,18 @@ export interface HelperData {
   enabled: boolean
   index: string | number
   scale: string | number
-}
-
-export interface MobsHelperProps {
   cursorPosition?: {x: number; y: number}
 }
 
-const MobsHelper = ({cursorPosition}: MobsHelperProps) => {
-  const [helperData, setHelperData] = useUpdateHelperData()
-  const [mobsConfig, setMobsConfig] = useAtom(mobsConfigAtom)
+export interface MobsHelperProps {}
 
-  const x = cursorPosition ? Math.round(cursorPosition.x + APP_WIDTH / 2 + OFFSET.x) : 0
-  const y = cursorPosition ? Math.round(cursorPosition.y + APP_HEIGHT / 2 + OFFSET.y) : 0
+const MobsHelper = () => {
+  const [helperData, setHelperData] = useAtom(helperDataAtom)
+  const [mobsConfig, setMobsConfig] = useAtom(mobsConfigAtom)
+  const cursorPosition = helperData.cursorPosition
+
+  const x = cursorPosition ? cursorPosition.x : 0
+  const y = cursorPosition ? cursorPosition.y : 0
 
   const handleRemove = () => {
     setMobsConfig(
@@ -52,9 +52,10 @@ const MobsHelper = ({cursorPosition}: MobsHelperProps) => {
           onChange={(e) => {
             const value = e.target.checked
 
-            setHelperData({
+            setHelperData((prev) => ({
+              ...prev,
               enabled: value,
-            })
+            }))
           }}
         />
       </label>
@@ -66,9 +67,10 @@ const MobsHelper = ({cursorPosition}: MobsHelperProps) => {
           onChange={(e) => {
             const value = e.target.value
 
-            setHelperData({
+            setHelperData((prev) => ({
+              ...prev,
               index: value,
-            })
+            }))
           }}
         />
       </label>
@@ -82,9 +84,10 @@ const MobsHelper = ({cursorPosition}: MobsHelperProps) => {
           onChange={(e) => {
             const value = e.target.value
 
-            setHelperData({
+            setHelperData((prev) => ({
+              ...prev,
               scale: value,
-            })
+            }))
           }}
         />
       </label>

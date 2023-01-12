@@ -4,19 +4,24 @@ import Image from 'next/image'
 import mobs from '@src/mobs.json'
 import MobInfoBadge from '@src/MobInfoBadge'
 
+const mobsMap = new Map(mobs.data.map((mob) => [mob.id, mob]))
 export interface MobInfoDialogProps {
-  selectedMobIndex?: number
+  selectedMobId?: string
   onClose: () => void
 }
 
-const MobInfoDialog = ({selectedMobIndex, onClose}: MobInfoDialogProps) => {
-  const show = selectedMobIndex !== undefined
+const MobInfoDialog = ({selectedMobId, onClose}: MobInfoDialogProps) => {
+  const show = selectedMobId !== undefined
 
-  if (selectedMobIndex === undefined) {
+  if (selectedMobId === undefined) {
     return null
   }
 
-  const contents = mobs.data[selectedMobIndex]
+  const contents = mobsMap.get(selectedMobId)
+
+  if (!contents) {
+    return null
+  }
 
   return (
     <Transition appear show={show} as={Fragment}>
@@ -46,7 +51,7 @@ const MobInfoDialog = ({selectedMobIndex, onClose}: MobInfoDialogProps) => {
             >
               <Dialog.Panel className="w-full max-w-screen-md  transform overflow-hidden rounded-2xl bg-white bg-[url('/mob-info-background.png')] bg-cover p-6 text-left align-middle shadow-xl transition-all">
                 <div className="relative aspect-[1/1]">
-                  <Image src={contents.url} alt="" layout="fill" />
+                  {contents.urls[0] && <Image src={contents.urls[0]} alt="" layout="fill" />}
                   <div className="absolute right-0 top-0 space-y-2 text-center">
                     <div>
                       <MobInfoBadge group={contents.group}>{contents.group}</MobInfoBadge>
