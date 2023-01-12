@@ -1,0 +1,216 @@
+{"frames": {
+
+"DOKKEBI_01.png":
+{
+	"frame": {"x":0,"y":0,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_02.png":
+{
+	"frame": {"x":400,"y":0,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_03.png":
+{
+	"frame": {"x":800,"y":0,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_04.png":
+{
+	"frame": {"x":1200,"y":0,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_05.png":
+{
+	"frame": {"x":1600,"y":0,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_06.png":
+{
+	"frame": {"x":0,"y":400,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_07.png":
+{
+	"frame": {"x":400,"y":400,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_08.png":
+{
+	"frame": {"x":800,"y":400,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_09.png":
+{
+	"frame": {"x":1200,"y":400,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_10.png":
+{
+	"frame": {"x":1600,"y":400,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_11.png":
+{
+	"frame": {"x":0,"y":800,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_12.png":
+{
+	"frame": {"x":400,"y":800,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_13.png":
+{
+	"frame": {"x":800,"y":800,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_14.png":
+{
+	"frame": {"x":1200,"y":800,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_15.png":
+{
+	"frame": {"x":1600,"y":800,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_16.png":
+{
+	"frame": {"x":0,"y":1200,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_17.png":
+{
+	"frame": {"x":400,"y":1200,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_18.png":
+{
+	"frame": {"x":800,"y":1200,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_19.png":
+{
+	"frame": {"x":1200,"y":1200,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_20.png":
+{
+	"frame": {"x":1600,"y":1200,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_21.png":
+{
+	"frame": {"x":0,"y":1600,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_22.png":
+{
+	"frame": {"x":400,"y":1600,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_23.png":
+{
+	"frame": {"x":800,"y":1600,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_24.png":
+{
+	"frame": {"x":1200,"y":1600,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+},
+"DOKKEBI_25.png":
+{
+	"frame": {"x":1600,"y":1600,"w":400,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":400},
+	"sourceSize": {"w":400,"h":400}
+}},
+"animations": {
+	"DOKKEBI": ["DOKKEBI_01.png","DOKKEBI_02.png","DOKKEBI_03.png","DOKKEBI_04.png","DOKKEBI_05.png","DOKKEBI_06.png","DOKKEBI_07.png","DOKKEBI_08.png","DOKKEBI_09.png","DOKKEBI_10.png","DOKKEBI_11.png","DOKKEBI_12.png","DOKKEBI_13.png","DOKKEBI_14.png","DOKKEBI_15.png","DOKKEBI_16.png","DOKKEBI_17.png","DOKKEBI_18.png","DOKKEBI_19.png","DOKKEBI_20.png","DOKKEBI_21.png","DOKKEBI_22.png","DOKKEBI_23.png","DOKKEBI_24.png","DOKKEBI_25.png","DOKKEBI_26.png","DOKKEBI_27.png","DOKKEBI_28.png","DOKKEBI_29.png","DOKKEBI_30.png","DOKKEBI_31.png","DOKKEBI_32.png","DOKKEBI_33.png","DOKKEBI_34.png","DOKKEBI_35.png","DOKKEBI_36.png","DOKKEBI_37.png","DOKKEBI_38.png","DOKKEBI_39.png","DOKKEBI_40.png","DOKKEBI_41.png","DOKKEBI_42.png","DOKKEBI_43.png","DOKKEBI_44.png","DOKKEBI_45.png","DOKKEBI_46.png","DOKKEBI_47.png","DOKKEBI_48.png","DOKKEBI_49.png","DOKKEBI_50.png","DOKKEBI_51.png","DOKKEBI_52.png","DOKKEBI_53.png","DOKKEBI_54.png","DOKKEBI_55.png","DOKKEBI_56.png","DOKKEBI_57.png","DOKKEBI_58.png","DOKKEBI_59.png","DOKKEBI_60.png","DOKKEBI_61.png","DOKKEBI_62.png","DOKKEBI_63.png","DOKKEBI_64.png","DOKKEBI_65.png","DOKKEBI_66.png","DOKKEBI_67.png","DOKKEBI_68.png","DOKKEBI_69.png","DOKKEBI_70.png","DOKKEBI_71.png","DOKKEBI_72.png","DOKKEBI_73.png","DOKKEBI_74.png","DOKKEBI_75.png","DOKKEBI_76.png","DOKKEBI_77.png","DOKKEBI_78.png","DOKKEBI_79.png","DOKKEBI_80.png","DOKKEBI_81.png","DOKKEBI_82.png","DOKKEBI_83.png","DOKKEBI_84.png","DOKKEBI_85.png","DOKKEBI_86.png","DOKKEBI_87.png","DOKKEBI_88.png","DOKKEBI_89.png","DOKKEBI_90.png","DOKKEBI_91.png","DOKKEBI_92.png","DOKKEBI_93.png","DOKKEBI_94.png","DOKKEBI_95.png","DOKKEBI_96.png","DOKKEBI_97.png","DOKKEBI_98.png","DOKKEBI_99.png","DOKKEBI_100.png","DOKKEBI_101.png","DOKKEBI_102.png","DOKKEBI_103.png","DOKKEBI_104.png","DOKKEBI_105.png","DOKKEBI_106.png","DOKKEBI_107.png","DOKKEBI_108.png","DOKKEBI_109.png","DOKKEBI_110.png","DOKKEBI_111.png","DOKKEBI_112.png","DOKKEBI_113.png","DOKKEBI_114.png","DOKKEBI_115.png","DOKKEBI_116.png","DOKKEBI_117.png","DOKKEBI_118.png","DOKKEBI_119.png","DOKKEBI_120.png","DOKKEBI_121.png","DOKKEBI_122.png","DOKKEBI_123.png","DOKKEBI_124.png","DOKKEBI_125.png","DOKKEBI_126.png","DOKKEBI_127.png","DOKKEBI_128.png","DOKKEBI_129.png","DOKKEBI_130.png","DOKKEBI_131.png","DOKKEBI_132.png","DOKKEBI_133.png","DOKKEBI_134.png","DOKKEBI_135.png","DOKKEBI_136.png","DOKKEBI_137.png","DOKKEBI_138.png","DOKKEBI_139.png","DOKKEBI_140.png","DOKKEBI_141.png","DOKKEBI_142.png","DOKKEBI_143.png","DOKKEBI_144.png","DOKKEBI_145.png","DOKKEBI_146.png","DOKKEBI_147.png","DOKKEBI_148.png","DOKKEBI_149.png","DOKKEBI_150.png","DOKKEBI_151.png","DOKKEBI_152.png","DOKKEBI_153.png","DOKKEBI_154.png","DOKKEBI_155.png","DOKKEBI_156.png","DOKKEBI_157.png","DOKKEBI_158.png","DOKKEBI_159.png","DOKKEBI_160.png","DOKKEBI_161.png","DOKKEBI_162.png","DOKKEBI_163.png","DOKKEBI_164.png","DOKKEBI_165.png","DOKKEBI_166.png","DOKKEBI_167.png","DOKKEBI_168.png","DOKKEBI_169.png","DOKKEBI_170.png","DOKKEBI_171.png","DOKKEBI_172.png","DOKKEBI_173.png","DOKKEBI_174.png","DOKKEBI_175.png","DOKKEBI_176.png","DOKKEBI_177.png","DOKKEBI_178.png","DOKKEBI_179.png","DOKKEBI_180.png","DOKKEBI_181.png","DOKKEBI_182.png","DOKKEBI_183.png","DOKKEBI_184.png","DOKKEBI_185.png","DOKKEBI_186.png","DOKKEBI_187.png","DOKKEBI_188.png","DOKKEBI_189.png","DOKKEBI_190.png","DOKKEBI_191.png","DOKKEBI_192.png","DOKKEBI_193.png","DOKKEBI_194.png","DOKKEBI_195.png","DOKKEBI_196.png","DOKKEBI_197.png","DOKKEBI_198.png","DOKKEBI_199.png","DOKKEBI_200.png","DOKKEBI_201.png","DOKKEBI_202.png","DOKKEBI_203.png","DOKKEBI_204.png","DOKKEBI_205.png","DOKKEBI_206.png","DOKKEBI_207.png","DOKKEBI_208.png","DOKKEBI_209.png","DOKKEBI_210.png","DOKKEBI_211.png","DOKKEBI_212.png","DOKKEBI_213.png","DOKKEBI_214.png","DOKKEBI_215.png","DOKKEBI_216.png","DOKKEBI_217.png","DOKKEBI_218.png","DOKKEBI_219.png","DOKKEBI_220.png","DOKKEBI_221.png","DOKKEBI_222.png","DOKKEBI_223.png","DOKKEBI_224.png","DOKKEBI_225.png","DOKKEBI_226.png","DOKKEBI_227.png","DOKKEBI_228.png","DOKKEBI_229.png","DOKKEBI_230.png","DOKKEBI_231.png","DOKKEBI_232.png","DOKKEBI_233.png","DOKKEBI_234.png","DOKKEBI_235.png","DOKKEBI_236.png","DOKKEBI_237.png","DOKKEBI_238.png","DOKKEBI_239.png","DOKKEBI_240.png","DOKKEBI_241.png","DOKKEBI_242.png","DOKKEBI_243.png","DOKKEBI_244.png","DOKKEBI_245.png","DOKKEBI_246.png","DOKKEBI_247.png","DOKKEBI_248.png","DOKKEBI_249.png","DOKKEBI_250.png","DOKKEBI_251.png","DOKKEBI_252.png","DOKKEBI_253.png","DOKKEBI_254.png","DOKKEBI_255.png","DOKKEBI_256.png","DOKKEBI_257.png","DOKKEBI_258.png","DOKKEBI_259.png","DOKKEBI_260.png","DOKKEBI_261.png","DOKKEBI_262.png","DOKKEBI_263.png","DOKKEBI_264.png","DOKKEBI_265.png","DOKKEBI_266.png","DOKKEBI_267.png","DOKKEBI_268.png","DOKKEBI_269.png","DOKKEBI_270.png","DOKKEBI_271.png","DOKKEBI_272.png","DOKKEBI_273.png","DOKKEBI_274.png","DOKKEBI_275.png","DOKKEBI_276.png","DOKKEBI_277.png","DOKKEBI_278.png","DOKKEBI_279.png","DOKKEBI_280.png","DOKKEBI_281.png","DOKKEBI_282.png","DOKKEBI_283.png","DOKKEBI_284.png","DOKKEBI_285.png","DOKKEBI_286.png","DOKKEBI_287.png","DOKKEBI_288.png","DOKKEBI_289.png","DOKKEBI_290.png","DOKKEBI_291.png","DOKKEBI_292.png","DOKKEBI_293.png","DOKKEBI_294.png","DOKKEBI_295.png","DOKKEBI_296.png","DOKKEBI_297.png","DOKKEBI_298.png","DOKKEBI_299.png","DOKKEBI_300.png","DOKKEBI_301.png","DOKKEBI_302.png","DOKKEBI_303.png","DOKKEBI_304.png","DOKKEBI_305.png","DOKKEBI_306.png","DOKKEBI_307.png","DOKKEBI_308.png","DOKKEBI_309.png","DOKKEBI_310.png","DOKKEBI_311.png","DOKKEBI_312.png","DOKKEBI_313.png","DOKKEBI_314.png","DOKKEBI_315.png","DOKKEBI_316.png","DOKKEBI_317.png","DOKKEBI_318.png","DOKKEBI_319.png","DOKKEBI_320.png","DOKKEBI_321.png","DOKKEBI_322.png","DOKKEBI_323.png","DOKKEBI_324.png","DOKKEBI_325.png","DOKKEBI_326.png","DOKKEBI_327.png","DOKKEBI_328.png","DOKKEBI_329.png","DOKKEBI_330.png","DOKKEBI_331.png","DOKKEBI_332.png","DOKKEBI_333.png","DOKKEBI_334.png","DOKKEBI_335.png","DOKKEBI_336.png","DOKKEBI_337.png","DOKKEBI_338.png","DOKKEBI_339.png","DOKKEBI_340.png","DOKKEBI_341.png","DOKKEBI_342.png","DOKKEBI_343.png","DOKKEBI_344.png","DOKKEBI_345.png","DOKKEBI_346.png","DOKKEBI_347.png","DOKKEBI_348.png","DOKKEBI_349.png","DOKKEBI_350.png","DOKKEBI_351.png","DOKKEBI_352.png","DOKKEBI_353.png","DOKKEBI_354.png","DOKKEBI_355.png","DOKKEBI_356.png","DOKKEBI_357.png","DOKKEBI_358.png","DOKKEBI_359.png","DOKKEBI_360.png","DOKKEBI_361.png","DOKKEBI_362.png","DOKKEBI_363.png","DOKKEBI_364.png","DOKKEBI_365.png","DOKKEBI_366.png","DOKKEBI_367.png","DOKKEBI_368.png","DOKKEBI_369.png","DOKKEBI_370.png","DOKKEBI_371.png","DOKKEBI_372.png","DOKKEBI_373.png","DOKKEBI_374.png","DOKKEBI_375.png","DOKKEBI_376.png","DOKKEBI_377.png","DOKKEBI_378.png","DOKKEBI_379.png","DOKKEBI_380.png","DOKKEBI_381.png","DOKKEBI_382.png","DOKKEBI_383.png","DOKKEBI_384.png","DOKKEBI_385.png","DOKKEBI_386.png","DOKKEBI_387.png","DOKKEBI_388.png","DOKKEBI_389.png","DOKKEBI_390.png","DOKKEBI_391.png","DOKKEBI_392.png","DOKKEBI_393.png","DOKKEBI_394.png","DOKKEBI_395.png","DOKKEBI_396.png","DOKKEBI_397.png","DOKKEBI_398.png","DOKKEBI_399.png","DOKKEBI_400.png","DOKKEBI_401.png","DOKKEBI_402.png","DOKKEBI_403.png","DOKKEBI_404.png","DOKKEBI_405.png","DOKKEBI_406.png","DOKKEBI_407.png","DOKKEBI_408.png","DOKKEBI_409.png","DOKKEBI_410.png","DOKKEBI_411.png","DOKKEBI_412.png","DOKKEBI_413.png","DOKKEBI_414.png","DOKKEBI_415.png","DOKKEBI_416.png","DOKKEBI_417.png","DOKKEBI_418.png","DOKKEBI_419.png","DOKKEBI_420.png","DOKKEBI_421.png","DOKKEBI_422.png","DOKKEBI_423.png","DOKKEBI_424.png","DOKKEBI_425.png","DOKKEBI_426.png","DOKKEBI_427.png","DOKKEBI_428.png","DOKKEBI_429.png","DOKKEBI_430.png","DOKKEBI_431.png","DOKKEBI_432.png","DOKKEBI_433.png","DOKKEBI_434.png","DOKKEBI_435.png","DOKKEBI_436.png","DOKKEBI_437.png","DOKKEBI_438.png","DOKKEBI_439.png","DOKKEBI_440.png","DOKKEBI_441.png","DOKKEBI_442.png","DOKKEBI_443.png","DOKKEBI_444.png","DOKKEBI_445.png","DOKKEBI_446.png","DOKKEBI_447.png","DOKKEBI_448.png","DOKKEBI_449.png","DOKKEBI_450.png","DOKKEBI_451.png","DOKKEBI_452.png","DOKKEBI_453.png","DOKKEBI_454.png","DOKKEBI_455.png","DOKKEBI_456.png","DOKKEBI_457.png","DOKKEBI_458.png","DOKKEBI_459.png","DOKKEBI_460.png","DOKKEBI_461.png","DOKKEBI_462.png","DOKKEBI_463.png","DOKKEBI_464.png","DOKKEBI_465.png","DOKKEBI_466.png","DOKKEBI_467.png","DOKKEBI_468.png","DOKKEBI_469.png","DOKKEBI_470.png","DOKKEBI_471.png","DOKKEBI_472.png","DOKKEBI_473.png","DOKKEBI_474.png","DOKKEBI_475.png","DOKKEBI_476.png","DOKKEBI_477.png","DOKKEBI_478.png","DOKKEBI_479.png","DOKKEBI_480.png","DOKKEBI_481.png","DOKKEBI_482.png","DOKKEBI_483.png","DOKKEBI_484.png","DOKKEBI_485.png","DOKKEBI_486.png","DOKKEBI_487.png","DOKKEBI_488.png","DOKKEBI_489.png","DOKKEBI_490.png","DOKKEBI_491.png","DOKKEBI_492.png","DOKKEBI_493.png","DOKKEBI_494.png","DOKKEBI_495.png","DOKKEBI_496.png","DOKKEBI_497.png","DOKKEBI_498.png","DOKKEBI_499.png","DOKKEBI_500.png","DOKKEBI_501.png","DOKKEBI_502.png","DOKKEBI_503.png","DOKKEBI_504.png","DOKKEBI_505.png","DOKKEBI_506.png","DOKKEBI_507.png","DOKKEBI_508.png","DOKKEBI_509.png","DOKKEBI_510.png","DOKKEBI_511.png","DOKKEBI_512.png","DOKKEBI_513.png","DOKKEBI_514.png","DOKKEBI_515.png","DOKKEBI_516.png","DOKKEBI_517.png","DOKKEBI_518.png","DOKKEBI_519.png","DOKKEBI_520.png","DOKKEBI_521.png","DOKKEBI_522.png","DOKKEBI_523.png","DOKKEBI_524.png","DOKKEBI_525.png","DOKKEBI_526.png","DOKKEBI_527.png","DOKKEBI_528.png","DOKKEBI_529.png","DOKKEBI_530.png","DOKKEBI_531.png","DOKKEBI_532.png","DOKKEBI_533.png","DOKKEBI_534.png","DOKKEBI_535.png","DOKKEBI_536.png","DOKKEBI_537.png","DOKKEBI_538.png","DOKKEBI_539.png","DOKKEBI_540.png","DOKKEBI_541.png","DOKKEBI_542.png","DOKKEBI_543.png","DOKKEBI_544.png","DOKKEBI_545.png","DOKKEBI_546.png","DOKKEBI_547.png","DOKKEBI_548.png","DOKKEBI_549.png","DOKKEBI_550.png","DOKKEBI_551.png","DOKKEBI_552.png","DOKKEBI_553.png","DOKKEBI_554.png","DOKKEBI_555.png","DOKKEBI_556.png","DOKKEBI_557.png","DOKKEBI_558.png","DOKKEBI_559.png","DOKKEBI_560.png","DOKKEBI_561.png","DOKKEBI_562.png","DOKKEBI_563.png","DOKKEBI_564.png","DOKKEBI_565.png","DOKKEBI_566.png","DOKKEBI_567.png","DOKKEBI_568.png","DOKKEBI_569.png","DOKKEBI_570.png","DOKKEBI_571.png","DOKKEBI_572.png","DOKKEBI_573.png","DOKKEBI_574.png","DOKKEBI_575.png","DOKKEBI_576.png","DOKKEBI_577.png","DOKKEBI_578.png","DOKKEBI_579.png","DOKKEBI_580.png","DOKKEBI_581.png","DOKKEBI_582.png","DOKKEBI_583.png","DOKKEBI_584.png","DOKKEBI_585.png","DOKKEBI_586.png","DOKKEBI_587.png","DOKKEBI_588.png","DOKKEBI_589.png","DOKKEBI_590.png","DOKKEBI_591.png","DOKKEBI_592.png","DOKKEBI_593.png","DOKKEBI_594.png","DOKKEBI_595.png","DOKKEBI_596.png","DOKKEBI_597.png","DOKKEBI_598.png","DOKKEBI_599.png","DOKKEBI_600.png","DOKKEBI_601.png","DOKKEBI_602.png","DOKKEBI_603.png","DOKKEBI_604.png","DOKKEBI_605.png","DOKKEBI_606.png","DOKKEBI_607.png","DOKKEBI_608.png","DOKKEBI_609.png","DOKKEBI_610.png","DOKKEBI_611.png","DOKKEBI_612.png","DOKKEBI_613.png","DOKKEBI_614.png","DOKKEBI_615.png","DOKKEBI_616.png","DOKKEBI_617.png","DOKKEBI_618.png","DOKKEBI_619.png","DOKKEBI_620.png","DOKKEBI_621.png","DOKKEBI_622.png","DOKKEBI_623.png","DOKKEBI_624.png","DOKKEBI_625.png","DOKKEBI_626.png","DOKKEBI_627.png","DOKKEBI_628.png","DOKKEBI_629.png","DOKKEBI_630.png","DOKKEBI_631.png","DOKKEBI_632.png","DOKKEBI_633.png","DOKKEBI_634.png","DOKKEBI_635.png","DOKKEBI_636.png","DOKKEBI_637.png","DOKKEBI_638.png","DOKKEBI_639.png","DOKKEBI_640.png","DOKKEBI_641.png","DOKKEBI_642.png","DOKKEBI_643.png","DOKKEBI_644.png","DOKKEBI_645.png","DOKKEBI_646.png","DOKKEBI_647.png","DOKKEBI_648.png","DOKKEBI_649.png","DOKKEBI_650.png","DOKKEBI_651.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "mob-sprites-0.png",
+	"format": "RGBA8888",
+	"size": {"w":2000,"h":2000},
+	"scale": "1",
+	"related_multi_packs": [ "mob-sprites-1.json", "mob-sprites-2.json", "mob-sprites-3.json", "mob-sprites-4.json", "mob-sprites-5.json", "mob-sprites-6.json", "mob-sprites-7.json", "mob-sprites-8.json", "mob-sprites-9.json", "mob-sprites-10.json", "mob-sprites-11.json", "mob-sprites-12.json", "mob-sprites-13.json", "mob-sprites-14.json", "mob-sprites-15.json", "mob-sprites-16.json", "mob-sprites-17.json", "mob-sprites-18.json", "mob-sprites-19.json", "mob-sprites-20.json", "mob-sprites-21.json", "mob-sprites-22.json", "mob-sprites-23.json", "mob-sprites-24.json", "mob-sprites-25.json", "mob-sprites-26.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:04b2fc221d8253b4e957ecfa59da70c7:d9cdded8a878943bb7ca3e7d95ffb635:8ad1d10f36abe38c6e90f5935eb80cfc$"
+}
+}
