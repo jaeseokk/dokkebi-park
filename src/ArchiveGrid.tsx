@@ -4,14 +4,9 @@ import Link from 'next/link'
 import ArchiveItem from '@src/ArchiveItem'
 import Masonry from 'react-masonry-css'
 
-const COLUMN_COUNT = 3
-const GAP = 36
+export interface ArchiveGridProps {}
 
-export interface ArchiveGridProps {
-  containerWidth: number
-}
-
-const ArchiveGrid = ({containerWidth}: ArchiveGridProps) => {
+const ArchiveGrid = ({}: ArchiveGridProps) => {
   return (
     <div className="pb-56">
       <Masonry

@@ -49,7 +49,7 @@ const getImagesData = (index: number) => {
     return range(0, item.length - 1).map((i) => {
       return range(0, item[i] - 1).map((j) => {
         return {
-          url: `https://dokkebi.s3.ap-northeast-2.amazonaws.com/contents/0${index}/0${i}/0${j}.jpg`,
+          url: `https://df87wl86xwmoj.cloudfront.net/contents/0${index}/0${i}/0${j}.jpg`,
         }
       })
     })
@@ -57,7 +57,7 @@ const getImagesData = (index: number) => {
 
   return range(0, item - 1).map((i) => {
     return {
-      url: `https://dokkebi.s3.ap-northeast-2.amazonaws.com/contents/0${index}/0${i}.jpg`,
+      url: `https://df87wl86xwmoj.cloudfront.net/contents/0${index}/0${i}.jpg`,
     }
   })
 }

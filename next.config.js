@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['dokkebi.s3.ap-northeast-2.amazonaws.com'],
+    domains: ['df87wl86xwmoj.cloudfront.net'],
   },
 }
 

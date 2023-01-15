@@ -2,7 +2,7 @@ import React, {useMemo, useState} from 'react'
 import Image from 'next/future/image'
 import {MasonryInfiniteGrid} from '@egjs/react-infinitegrid'
 
-const PAGE_SIZE = 50
+const PAGE_SIZE = 20
 
 const getGridGroupItems = <T,>(list: T[] | T[][], groupKey: number, count: number) => {
   const nextKey = groupKey * count
