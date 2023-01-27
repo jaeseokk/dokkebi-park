@@ -32,11 +32,12 @@ const ArchiveItem = ({title, desc, images, colorIndex}: ArchiveItemProps) => {
               className="min-h-[50px] w-[30%] overflow-hidden rounded-xl bg-[#EAEAEA]"
             >
               <Image
+                className="!relative !h-auto !w-full"
                 src={imageInfo.url}
                 sizes={'100px'}
                 fill
-                alt={''}
-                className="!relative !h-auto !w-full"
+                alt=""
+                unoptimized
               />
             </div>
           )

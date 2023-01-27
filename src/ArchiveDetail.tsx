@@ -108,6 +108,7 @@ const ArchiveDetail = ({scrollContainer}: ArchiveDetailProps) => {
                                 src={imageInfo.url}
                                 alt=""
                                 fill
+                                unoptimized
                               />
                             </li>
                           )

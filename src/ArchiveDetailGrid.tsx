@@ -64,20 +64,22 @@ const ArchiveDetailGrid = ({scrollContainer, images, onSelectGroup}: ArchiveDeta
                 }}
               >
                 <Image
+                  className="!relative !h-auto !w-full"
                   src={imageInfo.url}
                   sizes={'100px'}
                   fill
-                  alt={''}
-                  className="!relative !h-auto !w-full"
+                  alt=""
+                  unoptimized
                 />
               </button>
             ) : (
               <Image
+                className="!relative !h-auto !w-full"
                 src={imageInfo.url}
                 sizes={'100px'}
                 fill
-                alt={''}
-                className="!relative !h-auto !w-full"
+                alt=""
+                unoptimized
               />
             )}
           </div>
