@@ -1041,7 +1041,7 @@ export const MOB_CONFIG_LIST: MobConfig[] = [
       x: 1846,
       y: 283,
     },
-    scale: 1.1,
+    scale: 0.8,
   },
   {
     id: 'DD1',
@@ -1420,6 +1420,9 @@ export const MOB_CONFIG_LIST: MobConfig[] = [
       y: 498,
     },
     scale: 1,
+    boundaryMarginBottom: -30,
+    boundaryHeightScale: 0.3,
+    boundaryWidthScale: 0.2,
   },
   {
     id: 'FD1',
@@ -1996,6 +1999,7 @@ export const MOB_CONFIG_LIST: MobConfig[] = [
       y: 3036,
     },
     scale: 2.4,
+    boundaryHeightScale: 0.2,
   },
   {
     id: 'ID10',
@@ -3404,6 +3408,7 @@ export const MOB_CONFIG_LIST: MobConfig[] = [
       y: 3488,
     },
     scale: 2,
+    boundaryWidthScale: 0.5,
   },
   {
     id: 'OD2',
@@ -3444,6 +3449,7 @@ export const MOB_CONFIG_LIST: MobConfig[] = [
       y: 3549,
     },
     scale: 0.8,
+    boundaryWidthScale: 0.5,
   },
   {
     id: 'OD7',
@@ -5267,8 +5273,16 @@ export const BOUNDARY_EXCEPTION_CONFIG_LIST: BoundaryException[] = [
       x: 2071,
       y: 720,
     },
-    width: 40,
+    width: 20,
     height: 110,
+  },
+  {
+    position: {
+      x: 2291,
+      y: 1820,
+    },
+    width: 20,
+    height: 120,
   },
 ]
 

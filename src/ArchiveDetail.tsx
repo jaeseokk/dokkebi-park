@@ -54,14 +54,16 @@ const ArchiveDetail = ({scrollContainer}: ArchiveDetailProps) => {
   return (
     <>
       <div
-        className="min-h-full pt-[8.25rem] text-black"
+        className="min-h-full pt-[10rem] text-black"
         style={{
           backgroundColor: `var(--archive-bg-${cachedArchiveIdref.current % COLOR_SET.length})`,
         }}
       >
         <div className="mx-auto max-w-[64rem] pb-56">
-          <h2 className="mb-[6.25rem] text-5xl underline">{info.title}</h2>
-          <p className="text-lg">{info.desc}</p>
+          <h2 className="mb-[6.25rem] mt-[4rem] text-[2.876rem] font-semibold underline">
+            {info.title}
+          </h2>
+          <p className="text-lg leading-[1.7]">{info.desc}</p>
           <div className="relative mt-[6.25rem]">
             <ArchiveDetailGrid
               scrollContainer={scrollContainer}

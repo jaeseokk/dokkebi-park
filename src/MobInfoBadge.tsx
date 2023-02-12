@@ -1,15 +1,15 @@
 import React from 'react'
 
 const BACKGROUND_SET = {
-  신: 'linear-gradient(0deg, #dbdbdb 0%, rgba(255,255,255,1) 90%)',
-  귀신: 'linear-gradient(0deg, #ff396a 0%, rgba(255,255,255,1) 90%)',
-  몬스터: 'linear-gradient(0deg, rgba(67,255,64,1) 0%, rgba(255,255,255,1) 90%)',
-  돌: 'linear-gradient(0deg, #525252 0%, rgba(255,255,255,1) 90%)',
-  동물: 'linear-gradient(0deg, #3e5dff 0%, rgba(255,255,255,1) 90%)',
-  물건: 'linear-gradient(0deg, #ffe141 0%, rgba(255,255,255,1) 90%)',
-  캐슬: 'linear-gradient(0deg, #ff3ad9 0%, rgba(255,255,255,1) 90%)',
-  타워: 'linear-gradient(0deg, #ffb03f 0%, rgba(255,255,255,1) 90%)',
-  플랜트: 'linear-gradient(0deg, #3af3ff 0%, rgba(255,255,255,1) 90%)',
+  God: 'linear-gradient(0deg, #dbdbdb 0%, rgba(255,255,255,1) 90%)',
+  Ghost: 'linear-gradient(0deg, #ff396a 0%, rgba(255,255,255,1) 90%)',
+  Monster: 'linear-gradient(0deg, rgba(67,255,64,1) 0%, rgba(255,255,255,1) 90%)',
+  Stone: 'linear-gradient(0deg, #525252 0%, rgba(255,255,255,1) 90%)',
+  Animal: 'linear-gradient(0deg, #3e5dff 0%, rgba(255,255,255,1) 90%)',
+  Object: 'linear-gradient(0deg, #ffe141 0%, rgba(255,255,255,1) 90%)',
+  Castle: 'linear-gradient(0deg, #ff3ad9 0%, rgba(255,255,255,1) 90%)',
+  Tower: 'linear-gradient(0deg, #ffb03f 0%, rgba(255,255,255,1) 90%)',
+  Plants: 'linear-gradient(0deg, #3af3ff 0%, rgba(255,255,255,1) 90%)',
 }
 
 export interface MobInfoBadgeProps {

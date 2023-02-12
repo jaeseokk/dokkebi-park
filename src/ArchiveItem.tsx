@@ -14,12 +14,12 @@ export interface ArchiveItemProps {
 const ArchiveItem = ({title, desc, images, colorIndex}: ArchiveItemProps) => {
   return (
     <div
-      className="group rounded-3xl py-[1.5rem] px-[1.5rem] text-black"
+      className="group rounded-3xl py-[1.5rem] px-[1.25rem] text-black"
       style={{
         backgroundColor: COLOR_SET[colorIndex],
       }}
     >
-      <h2 className="mb-14 text-5xl underline">
+      <h2 className="mb-12 text-center text-[2rem] font-semibold underline">
         <AngledText>{title}</AngledText>
       </h2>
       <MasonryInfiniteGrid className="w-full" gap={10} align={'start'}>
@@ -29,7 +29,7 @@ const ArchiveItem = ({title, desc, images, colorIndex}: ArchiveItemProps) => {
           return (
             <div
               key={itemIndex}
-              className="min-h-[50px] w-[30%] overflow-hidden rounded-xl bg-[#EAEAEA]"
+              className="min-h-[50px] w-[31%] overflow-hidden rounded-xl bg-[#EAEAEA]"
             >
               <Image
                 className="!relative !h-auto !w-full"

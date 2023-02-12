@@ -966,11 +966,11 @@
     {
       "id": "CD78",
       "urls": ["/mobs/DOKKEBI_108.png"],
-      "desc": "\"춤추는 기억",
-      "group": " 니은\"",
-      "size": "Ghost",
-      "type": "Medium",
-      "note": "조형물"
+      "desc": "춤추는 기억, 니은",
+      "group": "Ghost",
+      "size": "Medium",
+      "type": "조형물",
+      "note": ""
     },
     {
       "id": "CD79",
@@ -1353,11 +1353,11 @@
     {
       "id": "ED1",
       "urls": ["/mobs/DOKKEBI_151.png"],
-      "desc": "\"돌아봐세바퀴",
-      "group": " 세상에서 제일 큰 부적\"",
-      "size": "Tower",
-      "type": "Large",
-      "note": "건물/H4.7 w2.2 d2.2 "
+      "desc": "돌아봐세바퀴, 세상에서 제일 큰 부적",
+      "group": "Tower",
+      "size": "Large",
+      "type": "건물/H4.7 w2.2 d2.2",
+      "note": ""
     },
     {
       "id": "ED2",
@@ -3774,11 +3774,11 @@
     {
       "id": "OD1",
       "urls": ["/mobs/DOKKEBI_420.png"],
-      "desc": "\"징가숑타워(전면",
-      "group": " 후면)\"",
-      "size": "Tower",
-      "type": "Large",
-      "note": "조형물/건물/H8.4 w5.4 d3.4 "
+      "desc": "징가숑타워",
+      "group": "Tower",
+      "size": "Large",
+      "type": "조형물/건물/H8.4 w5.4 d3.4",
+      "note": ""
     },
     {
       "id": "OD2",

@@ -5,7 +5,7 @@ export interface ArchiveProps {}
 
 const Archive = ({}: ArchiveProps) => {
   return (
-    <div className="min-h-full bg-black pt-[8.25rem]">
+    <div className="min-h-full bg-black pt-[10rem]">
       <div className="mx-auto max-w-[64rem]">
         <div className="relative">
           <ArchiveGrid />

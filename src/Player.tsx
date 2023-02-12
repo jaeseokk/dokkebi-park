@@ -31,7 +31,7 @@ const getNextPosition = (
   }
 
   const isColliding =
-    !boundaryExceptions.every((boundaryException) => {
+    !boundaryExceptions.some((boundaryException) => {
       return rectangularCollision({
         rectangle1: {
           position: {
@@ -173,7 +173,7 @@ export const Player = ({isPlaying}: PlayerProps) => {
       direction = 'right'
     }
 
-    const speed = 2
+    const speed = 3
     const deltaVelocity = {
       x: velocity.x * speed * delta,
       y: velocity.y * speed * delta,

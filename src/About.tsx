@@ -9,12 +9,12 @@ const About = ({}: AboutProps) => {
   return (
     <div className="bg-black pt-[8.25rem]">
       <div className="mx-auto max-w-[64rem] pt-20 pb-56">
-        <div>
+        <div className="px-[10rem]">
           <Image src={aboutImg} width={1024} height={374} alt="" placeholder="blur" />
         </div>
-        <div className="relative mt-[15rem] space-y-[23.75rem] pl-[20.125rem] text-3xl">
+        <div className="relative mt-[10rem] space-y-[16rem] pl-[14rem] text-[1.5rem] leading-[1.7]	">
           <section>
-            <h2 className="absolute left-0 text-4xl underline">ABOUT</h2>
+            <h2 className="absolute left-0 text-3xl underline">ABOUT</h2>
             <div className="space-y-20">
               <p>
                 제주도 제주시에 위치한 도깨비공원은 2005년 개장하여 10년간 운영을 하고 지금은 폐업
@@ -36,16 +36,19 @@ const About = ({}: AboutProps) => {
                 구성되어 있습니다. 맵 아카이브에는 실재하는 공원의 모습이 2D 형태의 모습으로
                 구현되었습니다. 사용자는 원하는 곳으로 이동할 수 있으며, 도깨비와 만났을 때 간단한
                 인터렉션을 경험할 수 있습니다. 각각의 구역에 숨겨져있는 애니메이션을 통해 도깨비
-                탄생 설화도 알 수 있습니다. 도깨비공원 사진아카이브는 도깨비와 그들의 탄생 과정,
-                다양한 공원의 모습을 볼 수 있는 사진 저장소입니다. 2005년부터 2022년까지
-                도깨비공원에 살고 있는 여러 도깨비의 과거, 그리고 현재의 모습을 찾아볼 수 있습니다.
-                이 두 개의 아카이브를 통해 사라지는 대형 공간이 웹을 통해 재건축되어 사람들이 공간
-                자체를 기억하고 지속적으로 이용할 수 있도록 하는 것이 이 프로젝트의 목표입니다.
+                탄생 설화도 알 수 있습니다.
+              </p>
+              <p>
+                도깨비공원 사진아카이브는 도깨비와 그들의 탄생 과정, 다양한 공원의 모습을 볼 수 있는
+                사진 저장소입니다. 2005년부터 2022년까지 도깨비공원에 살고 있는 여러 도깨비의 과거,
+                그리고 현재의 모습을 찾아볼 수 있습니다. 이 두 개의 아카이브를 통해 사라지는 대형
+                공간이 웹을 통해 재건축되어 사람들이 공간 자체를 기억하고 지속적으로 이용할 수
+                있도록 하는 것이 이 프로젝트의 목표입니다.
               </p>
             </div>
           </section>
-          <section className="text-2xl">
-            <h2 className="absolute left-0 text-4xl underline">CREDIT</h2>
+          <section className="text-[1.25rem]">
+            <h2 className="absolute left-0 text-3xl underline">CREDIT</h2>
             <ul className="space-y-3">
               <li>이해강: 총괄 기획 및 진행, 일러스트, 애니메이션</li>
               <li>김유리: 기획, 아키비스트</li>
@@ -61,7 +64,7 @@ const About = ({}: AboutProps) => {
             </ul>
           </section>
         </div>
-        <div className="mt-[23.75rem] text-center">
+        <div className="mt-[20rem] text-center">
           <Image src={sponsorsImg} width={480} height={50} alt="sponsors" placeholder="blur" />
           <p className="mt-8">
             이 프로젝트는 문화체육관광부, 한국문화예술위원회의 온라인 미디어 예술 활동 지원 사업의
